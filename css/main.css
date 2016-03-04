@@ -1,6 +1,13 @@
 /* This rule is read by Galleria to define the gallery height: */
 #galleria {
-    height:100vh
+    height:60vh
+}
+
+.galleria-fscr:before {
+  content: "\f065"; /* char code for fa-expand */
+  position: absolute;
+  font-family: FontAwesome;
+  color: #fff;
 }
 
 /* add custom styles */
@@ -8,4 +15,29 @@ body {
     overflow: auto;
     font-family: 'Work Sans', sans-serif;
     font-weight: 100;
+    color: #858585;
+    background-color: #fafafa;
+}
+
+/* unvisited link */
+span:link {
+    color: black;
+}
+
+/* visited link */
+/*span:visited {
+    background-color: red;
+    color: white;
+}*/
+
+/* mouse over link */
+span:hover {
+    color: #d3d3d3;
+    background-color: #00DF94;
+}
+
+/* selected link */
+span:active {
+    background-color: white !important;
+    color: black;
 }
