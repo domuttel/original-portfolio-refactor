@@ -83,6 +83,8 @@ $(document).on('ready', function(e) {
     });
     //----------------------------------------------
 
+    $("#demo01").animatedModal();
+
 // Load Galleria Theme
     Galleria.loadTheme('js/galleria/galleria.classic.js');
 
@@ -101,6 +103,5 @@ $(document).on('ready', function(e) {
             // imageCrop: true, SET THIS UP
         });
     }
-
 
 });

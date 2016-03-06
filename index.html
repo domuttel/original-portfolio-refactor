@@ -13,6 +13,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/galleria.classic.css">
         <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
    <!-- <link rel="icon" type="image/png" href="images/favicon.png"> -->
 
     </head>
@@ -22,7 +23,8 @@
             <div class="twelve columns">
                 <!-- <object id="scribble" type="image/svg+xml" data="images/scribble.svg"></object> -->
                 <h1 class="u-pull-left ">DOMINIC MUTTEL</h1>
-                <h5 class="u-pull-right">About</h5>
+                <h5 class="u-pull-right" id="demo01" href="#animatedModal">ABOUT</h5>
+
             </div>
         </div>
         <div class="row">
@@ -40,13 +42,28 @@
     <div class="container">
         <div class="row">
             <div class="twelve columns">
-
+                <div class="u-pull-right">
+                    <img src="images/twitter_circle.svg">
+                    <img src="images/linkedin_circle.svg">
+                    <img src="images/github_circle.svg">
+                </div>
             </div>
         </div>
     </div>
+        <div id="animatedModal">
+            <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+            <div  id="btn-close-modal" class="close-animatedModal">
+                CLOSE MODAL
+            </div>
+
+            <div class="modal-content">
+                <!--Your modal content goes here-->
+            </div>
+        </div>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
         <script type="text/javascript" src="js/galleria/galleria-1.4.2.js" ></script>
         <!-- ^ change to minified after done-->
+        <script type="text/javascript" src="js/modal/animatedModal.js"></script>
         <script type="text/javascript" src="js/gallery.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>

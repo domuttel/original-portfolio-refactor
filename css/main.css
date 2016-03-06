@@ -2,6 +2,12 @@
 #galleria {
     height:60vh
 }
+            #btn-close-modal {
+                width:100%;
+                text-align: center;
+                cursor:pointer;
+                color:#fff;
+            }
 /*img {
   z-index: -1;
 }*/
