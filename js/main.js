@@ -11,24 +11,26 @@ $(document).on('ready', function(e) {
             $( "#projects" ).html(
                 '<span class="image-gallery">' + 'LinkQuizTics' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Pirate: Contemporary Art' + '</span>' + ', ' +
-                '<span class="image-gallery">' + 'Wordcloud Town' + '</span>'
-            ) && loadGalleria(webProjects);
+                '<span class="image-gallery">' + 'Wordcloud Town' + '</span>'  + ', ' +
+                '<span class="image-gallery">' + 'CSR' + '</span>'
+            )  && loadGalleria(webProjects);
         }
         else if (index === 1){
             $( "#projects" ).html(
                 '<span class="image-gallery">' + 'Identity' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Print' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Public' + '</span>'
-            ) && loadGalleria(identity);
+             ) && loadGalleria(identity);
         }
         else {
             $( "#projects" ).html(
+                '<span class="image-gallery">' + 'TV Abstractions' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Noesis/Landscape' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Television Vernacular' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Meetings In Hollywood' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Remote Patterns' + '</span>' + ', ' +
                 '<span class="image-gallery">' + 'Hands' + '</span>'
-            ) && loadGalleria(noesis);
+             ) && loadGalleria(tvAbstract);
         }
 
     });
@@ -36,29 +38,32 @@ $(document).on('ready', function(e) {
 // $(".specialty").on('click', function () {
 //     console.log("fired");
 //     if (index === 0) {
-//         $('#projects, span #graphic').css('color', 'red');
-//         $( "ul.topnav > li" ).css( "border", "3px double red" );
+//         $('#specialties h1:first, #projects').css('background-color', 'red');
 //     }
 // });
-    //event handler function for gallery to show when project is selected
+//     //event handler function for gallery to show when project is selected
 
     $( document ).on("click", ".image-gallery", function() {
         var indexOfArtGal = $( ".image-gallery" ).index( this );
         if (index === 2) {
             if(indexOfArtGal === 0) {
-                loadGalleria(noesis);
+                loadGalleria(tvAbstract);
+                // $('#post-description').append();
             }
             else if(indexOfArtGal == 1){
-                loadGalleria(teleVis);
+                loadGalleria(noesis);
             }
             else if(indexOfArtGal == 2){
-                loadGalleria();
+                loadGalleria(teleVis);
             }
             else if(indexOfArtGal == 3){
-                loadGalleria();
+                loadGalleria(meetingsInHWood);
+            }
+            else if(indexOfArtGal === 4){
+                loadGalleria(remotePatterns);
             }
             else {
-                loadGalleria();
+                loadGalleria(hands);
             }
         }
         else if (index === 1){
@@ -84,6 +89,7 @@ $(document).on('ready', function(e) {
 // function to repopulate dataSource onclick of gallery
     function loadGalleria(dataSource1) {
             $('#galleria').galleria({
+
             lightbox: true,
             idleMode: true,
             imageCrop: false,

@@ -15,27 +15,44 @@
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-04.png',
+            image: 'images/galleries/webThumbs/pirateMobile.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-05.png',
+            image: 'images/galleries/webThumbs/wordcloudTown.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-06.png',
+            image: 'images/galleries/logo/10.jpg',
             title: '',
             description: ''
         },
-        {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-07.png',
-            title: '',
-            description: ''
-        }
     ];
 // ART OBJECTS
+    var tvAbstract = [
+        {
+            image: 'images/galleries/tvAbstractions/tv1.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/tvAbstractions/tv2.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/tvAbstractions/tv3.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/tvAbstractions/tv4.jpg',
+            title: '',
+            description: ''
+        },
+    ];
     var noesis = [
         {
             image: 'images/galleries/noesisLandscape/1.jpg',
@@ -125,6 +142,172 @@
             descript: 'silver gelatin print, <br> 2.7 x 1.75 in. (6.858 x 4.445 cm).'
         }
     ];
+    var meetingsInHWood = [
+        {
+            image: 'images/galleries/meetingsInHollywood/1.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/10.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/11.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/12.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/13.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/2.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/3.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/4.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/5.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/6.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/7.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/8.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/meetingsInHollywood/9.jpg',
+            title: '',
+            description: ''
+        }
+    ];
+    var remotePatterns = [
+        {
+            image: 'images/galleries/remotePatterns/1.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/10.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/11.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/12.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/13.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/2.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/3.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/4.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/5.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/6.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/7.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/8.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/remotePatterns/9.png',
+            title: '',
+            description: ''
+        }
+    ];
+    var hands = [
+        {
+            image: 'images/galleries/hands/1.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/hands/2.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/hands/3.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/hands/4.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/hands/5.jpg',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/hands/6.jpg',
+            title: '',
+            description: ''
+        }
+    ];
 // GRAPHIC OBJECTS
     var identity = [
         {
@@ -148,57 +331,12 @@
             description: ''
         },
         {
-            image: 'images/galleries/logo/2.jpg',
+            image: 'images/galleries/logo/12steps.png',
             title: '',
             description: ''
         },
         {
             image: 'images/galleries/logo/4.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/7c.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/coco.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/co2.png',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/co5.png',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/co10.png',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/co11.png',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/coco31.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/7a.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/7b.jpg',
             title: '',
             description: ''
         },
@@ -221,32 +359,12 @@
             description: ''
         },
         {
-            image: 'images/galleries/posters/6.jpg',
+            image: 'images/galleries/posters/placeLayout.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/posters/10.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/14.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/4a.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/4b.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/4c.jpg',
+            image: 'images/galleries/posters/hgz.jpg',
             title: '',
             description: ''
         },
@@ -256,20 +374,10 @@
             description: ''
         },
         {
-            image: 'images/galleries/posters/15.jpg',
+            image: 'images/galleries/emmanuelConfluence/postcardLayout.png',
             title: '',
             description: ''
         },
-        {
-            image: 'images/galleries/posters/17a.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/17.jpg',
-            title: '',
-            description: ''
-        }
     ];
     var public = [
         {
@@ -278,27 +386,12 @@
             description: ''
         },
         {
+            image: 'images/galleries/grassIsGreener/postcardLayout.png',
+            title: '',
+            description: ''
+        },
+        {
             image: 'images/galleries/grassIsGreener/1.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/grassIsGreener/1a.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/grassIsGreener/2.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/grassIsGreener/3.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/grassIsGreener/3a.jpg',
             title: '',
             description: ''
         },
