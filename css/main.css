@@ -1,82 +1,245 @@
-/* This rule is read by Galleria to define the gallery height: */
+#resume {
+  font-family: "Courier New", Courier, monospace;
+  color: red;
+}
+  #about-me {
+    font-style: italic;
+    /*letter-spacing: 16px;*/
+    font-size:1.4em;
+    margin-top: -20px;
+    padding: 75px 150px 150px;
+        text-align: justify;
+    text-justify: inter-word;
+    border:solid red 2.5px;
+  }
+  #edu-skil {
+    font-style: normal;
+    margin-top: 65px;
+  }
+  .contact {
+    font-size: 1em;
+   text-align: right;
+   margin-bottom: 30px;
+  }
+  .date{
+    font-size: .6em;
+  }
+  .item{
+    padding-bottom: 1.3em;
+  }
+  .institution{
+    font-size: .8em;
+  }
+  .skills{
+    font-size: 1.1em;
+  }
+  #aboutThis{
+    margin-top: 32px ;
+  }
+  #education{
+    text-align: right;
+  }
+  .title{
+    font-size: 1em;
+  }
+  .studyType{
+    font-size: .9em;
+    font-weight: bold;
+  }
+  .area{
+    font-size: .7em;
+  }
+  .name{
+    font-size: .8em;
+  }
+/*.close-animatedModal {
+  margin-top: 400px;
+}*/
+#btn-close-modal {
+  position: relative;
+  /*color: white;*/
+  /*margin-left: 5px;*/
+  margin-top: 12px;
+  font-size: 2em !important;
+}
+#btn-close-modal:hover {
+  color: white;
+  border: 10px solid red;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+}
 #galleria {
     height:60vh
 }
-            #btn-close-modal {
-                width:100%;
-                text-align: center;
-                cursor:pointer;
-                color:#fff;
-            }
-/*img {
-  z-index: -1;
-}*/
-/*div {
-  z-index: 100;
-}*/
-#roundLogo {
-  opacity: 0.2;
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: 10px;
-  left: 10%;
-  -webkit-animation-name: round;
-  -webkit-animation-duration: 40000ms;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-  -moz-animation-name: round;
-  -moz-animation-duration: 40000ms;
-  -moz-animation-iteration-count: infinite;
-  -moz-animation-timing-function: linear;
-  -ms-animation-name: round;
-  -ms-animation-duration: 40000ms;
-  -ms-animation-iteration-count: infinite;
-  -ms-animation-timing-function: linear;
-}
-@-moz-keyframes round {
-    from { -moz-transform: rotate(0deg); }
-    to { -moz-transform: rotate(360deg); }
-}
-@-webkit-keyframes round {
-    from { -webkit-transform: rotate(0deg); }
-    to { -webkit-transform: rotate(360deg); }
-}
-@keyframes round {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
+
+#specialties{
+  margin-top:7px;
 }
 
-/* add custom styles */
+#cloud {
+  z-index:1;
+}
+.image-gallery {
+
+}
+/*FOR FOOTER PLACEMENT*/
+.problem {
+  text-align:center;
+  z-index: 9999;
+}
+.enclose {
+  position:fixed;
+  bottom:-26px;
+  right: 15%
+}
+#footer-layer-top {
+  z-index: 9999;
+}
+
+#project-placer {
+  margin-top:-10px;
+}
+/*offsets whole page*/
+#top-offset {
+  margin-top: 10px;
+  z-index: 1000;
+}
+
+/* PAGE BORDER */
+#top, #bottom, #left, #right {
+  background: rgba(235, 68, 48, 0.8);
+  position: fixed;
+  z-index: 8000;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 18px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 18px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+/* This rule is read by Galleria to define the gallery height: */
+
 body {
-  /*z-index: 100;*/
-    overflow: auto;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 100;
-    color: #858585;
-    /*background-image: url(../images/marble.jpg);*/
-    /*background-size: 100vh;*/
+  z-index: -100;
+  width: 100vw;
+  cursor: crosshair;
+  overflow: auto;
+  color: white;
+  background: linear-gradient(90deg, #fff, #29a4a0, #49cff2, #00df94, #fff, #29a4a0, #49cff2, #00df94);
+  background-size: 700% 700%;
+  -webkit-animation: movingBackground 30s ease infinite;
+  -moz-animation: movingBackground 30s ease infinite;
+  -o-animation: movingBackground 30s ease infinite;
+  animation: movingBackground 30s ease infinite;
+}
+  @-webkit-keyframes movingBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-moz-keyframes movingBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @-o-keyframes movingBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  @keyframes movingBackground {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+h1{
+  font-family: Arial black;
+  font-style: italic;
+  font-size: 4em;
+  letter-spacing: 5px;
+}
+
+h2{
+  font-style: italic;
+  font-size:1.5em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h3 {
+  font-size:1.2em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h4{
+  font-size:1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h5 {
+  font-size:16px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+p {
+  font-size:12px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* My name HEADER */
+#open-resume{
+  color: white;
+  margin-top: -8px;
+}
+/* unvisited link */
+#open-resume:link {
+  color:  white;
+}
+/* visited link */
+#open-resume:visited {
+  background-color: red;
+  color: white;
+}
+/* mouse over link */
+#open-resume:hover {
+  cursor: pointer;
+  color: #eb4430;
+  -moz-transform: scale(1, -1);
+  -webkit-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+/* selected link */
+#open-resume:active {
+  color: white;
 }
 
 /* unvisited link */
 span:link {
-    color: black;
+  color:  white;
 }
-
 /* visited link */
 span:visited {
-    background-color: red;
-    color: white;
+  background-color: red;
+  color: white;
 }
-
 /* mouse over link */
 span:hover {
-    color: #d3d3d3;
-    background-color: white;
+  cursor: pointer;
+  color: #eb4430;
 }
-
 /* selected link */
 span:active {
-    background-color: white !important;
-    color: black;
+  background-color: white !important;
+  color: #eb4430;
 }
