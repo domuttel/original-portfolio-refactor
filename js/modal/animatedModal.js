@@ -17,7 +17,7 @@
             position:'fixed',
             width:'100%',
             height:'100%',
-            top:'65px',
+            top:'100px',
             left:'0px',
             zIndexIn: '9900',
             zIndexOut: '-9999',
@@ -27,7 +27,7 @@
             animatedIn:'zoomIn',
             animatedOut:'zoomOut',
             animationDuration:'.6s',
-            overflow:'auto',
+            overflow:'hidden',
             // Callbacks
             beforeOpen: function() {},
             afterOpen: function() {},

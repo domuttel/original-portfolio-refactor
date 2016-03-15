@@ -321,17 +321,7 @@
             description: ''
         },
         {
-            image: 'images/galleries/logo/10.jpg',
-            title: '',
-            description: ''
-        },
-        {
             image: 'images/galleries/logo/1.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/logo/12steps.png',
             title: '',
             description: ''
         },
