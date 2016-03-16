@@ -1088,7 +1088,7 @@ $.event.special['click:fast'] = {
         }).on('touchstart.fast', function(e) {
             window.clearTimeout($(this).data('timer'));
             $(this).data('clickstate', {
-                touched: true, 
+                touched: true,
                 touchdown: true,
                 coords: getCoords(e.originalEvent),
                 evObj: e
@@ -1096,9 +1096,9 @@ $.event.special['click:fast'] = {
         }).on('touchmove.fast', function(e) {
             var coords = getCoords(e.originalEvent),
                 state = $(this).data('clickstate'),
-                distance = Math.max( 
-                    Math.abs(state.coords.x - coords.x), 
-                    Math.abs(state.coords.y - coords.y) 
+                distance = Math.max(
+                    Math.abs(state.coords.x - coords.x),
+                    Math.abs(state.coords.y - coords.y)
                 );
             if ( distance > 6 ) {
                 $(this).data('clickstate', $.extend(state, {
@@ -2608,7 +2608,7 @@ Galleria.prototype = {
             idleSpeed: 200,
             imageCrop: false,
             imageMargin: 0,
-            imagePan: false,
+            imagePan: true,
             imagePanSmoothness: 12,
             imagePosition: '50%',
             imageTimeout: undef, // 1.2.5
@@ -2622,7 +2622,7 @@ Galleria.prototype = {
             maxScaleRatio: undef,
             maxVideoSize: undef, // 1.2.9
             minScaleRatio: undef, // deprecated in 1.2.9
-            overlayOpacity: 0.85,
+            overlayOpacity: 1,
             overlayBackground: '#0b0b0b',
             pauseOnInteraction: true,
             popupLinks: false,
@@ -2640,8 +2640,8 @@ Galleria.prototype = {
             thumbMargin: 0,
             thumbQuality: 'auto',
             thumbDisplayOrder: true, // 1.2.8
-            thumbPosition: '50%', // 1.3
-            thumbnails: true,
+            thumbPosition: '90%', // 1.3
+            thumbnails: false,
             touchTransition: undef, // 1.2.6
             transition: 'fade',
             transitionInitial: undef, // legacy, deprecate in 1.3. Use initialTransition instead.
@@ -2758,7 +2758,7 @@ Galleria.prototype = {
 
             // legacy patch
             if( s === false || s == 'disabled' ) { return false; }
-            
+
             return !!Galleria.TOUCH;
 
         }( options.swipe ));

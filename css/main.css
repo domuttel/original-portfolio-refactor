@@ -3,20 +3,60 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+html {
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/rockRepeat.gif);
+}
+#ello {
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  background-image: url(../images/indivIconsReg-02.png);
+}
+#github {
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  background-image: url(../images/indivIconsReg-04.png);
+}
+#cargo {
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  background-image: url(../images/indivIconsReg-06.png);
+}
+#twitter {
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  background-image: url(../images/indivIconsReg-08.png);
+}
+#linked {
+  height: 50px;
+  width: 50px;
+  z-index: 9999;
+  background-image: url(../images/indivIconsReg-10.png);
+}
+
 #ello:hover {
-  background-image: url('images/indivIconsHover-1'),
+  z-index: 9999;
+  background-image: url(../images/indivIconsHover-01.png);
 }
 #github:hover {
-  background-image: url('images/indivIconsHover-2'),
+  background-image: url(../images/indivIconsHover-03.png);
 }
 #cargo:hover {
-  background-image: url('images/indivIconsHover-3'),
+  background-image: url(../images/indivIconsHover-05.png);
 }
 #twitter:hover {
-  background-image: url('images/indivIconsHover-4'),
+  background-image: url(../images/indivIconsHover-07.png);
 }
 #linked:hover {
-  background-image: url('images/indivIconsHover-5'),
+  background-image: url(../images/indivIconsHover-09.png);
+}
+.icons:hover {
+  display: inline-block;
 }
 #resume {
   font-family: "Courier New", Courier, monospace;
@@ -45,7 +85,6 @@
   #edu-skil {
     display: none;
     font-style: normal;
-    /*margin-top: 65px;*/
   }
   #contact {
     position: absolute;
@@ -55,7 +94,6 @@
     font-size: 1em;
     text-align: right;
 
-   /*margin-bottom: 30px;*/
   }
   .date{
     font-size: .6em;
@@ -183,11 +221,12 @@ padding: 10px;
 /* This rule is read by Galleria to define the gallery height: */
 
 body {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   cursor: crosshair;
-  /*overflow: hidden;*/
+  overflow: hidden;
   color: white;
-  background: linear-gradient(90deg, #fff, #29a4a0, #49cff2, #00df94, #fff, #29a4a0, #49cff2, #00df94);
+  background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(41, 164, 160, 0.5), rgba(73, 207, 242, 0.5), rgba(0, 223, 148, 0.5), rgba(255,255,255,0.9), rgba(41, 164, 160, 0.5), rgba(73, 207, 242, 0.5), rgba(0, 223, 148, 0.5));
   background-size: 700% 700%;
   -webkit-animation: movingBackground 30s ease infinite;
   -moz-animation: movingBackground 30s ease infinite;
@@ -248,9 +287,9 @@ p {
   font-family: "Courier New", Courier, monospace;
 }
 #social-icons {
-  position: absolute;
-  top: -16px;
-  right: 0;
+  position: fixed;
+  top: -6px;
+  right: 20%;
   z-index: 100 !important;
 }
 /* My name HEADER */
