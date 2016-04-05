@@ -1,209 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
-    <title>Happy Birthday</title>
+        <meta charset="utf-8">
+        <title>Dominic Muttel Portfolio</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="Dominic Muttel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/galleria.classic.css">
+        <link rel="stylesheet" type="text/css" href="css/main-clean.css">
+        <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
-    <style type="text/css">
 
-      html, body {
-                  font-family: "Lucida Console", Monaco, monospace;
-color: black;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        /*overflow: hidden;*/
-        position: relative;
-        text-align: center;
-        background: transparent;
-        background: linear-gradient(90deg, rgba(255,255,255,0.9), rgba(41, 164, 160, 0.5), rgba(255,255,255,0.9), rgba(73, 207, 242, 0.5), rgba(0, 223, 148, 0.5), rgba(255,255,255,0.9), rgba(41, 164, 160, 0.5), rgba(255,255,255,0.9),rgba(73, 207, 242, 0.5), rgba(0, 223, 148, 0.5), red);
-        background-size: 700% 700%;
-        -webkit-animation: movingBackground 30s ease infinite;
-        -moz-animation: movingBackground 30s ease infinite;
-        -o-animation: movingBackground 30s ease infinite;
-        animation: movingBackground 30s ease infinite;
-        -webkit-text-fill-color: transparent;
-      }
-        @-webkit-keyframes movingBackground {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-        @-moz-keyframes movingBackground {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-        @-o-keyframes movingBackground {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-        @keyframes movingBackground {
-          0%{background-position:0% 50%}
-          50%{background-position:100% 50%}
-          100%{background-position:0% 50%}
-        }
-
-        #yungC-pic{
-          background-repeat: no-repeat;
-          background-image: url(images/yungC-1.png);
-          background-position: center;
-          width: 100vw;
-          height:100vh;
-          position: fixed;
-          bottom: 0;
-          z-index: -100;
-          color: white;
-          font-family: arial;
-          /*opacity: .5;*/
-        }
-        h2{
-          /*font-family: "Lucida Console", Monaco, monospace;*/
-          z-index: 9999;
-          /*color: black;*/
-          font-size: 4em;
-/*          width: 100vh;
-          height: 100vw;*/
-          top: 0;
-          left: 0;
-          position: absolute;
-          background-color: transparent;
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        text-align: center;
-        }
-        canvas {
-          z-index: 100;
-          position: absolute;
-          top: 0;
-          left:0;
-        }
-    </style>
     <body>
-    <div>hialsdihadfhsaldhsf</div>
-        <div id="yungC-pic"></div>
-        <canvas id="world"></canvas>
-    <script type="text/javascript">
-      (function() {
-  var COLORS, Confetti, NUM_CONFETTI, PI_2, canvas, confetti, context, drawCircle, i, range, resizeWindow, xpos;
+<!-- START Container top -->
+        <div id="hidden-on-about" class="container">
 
-  NUM_CONFETTI = 1000;
+    <!-- Navigation -->
+            <div class="row" id="top-offset">
+                <div class="twelve columns" id="specialties" >
+                    <span class="button button-primary specialty dev-highlight" href="#">DEV</span>
+                    <span class="button button-primary specialty des-highlight" href="#">DESIGN</span>
+                    <span class="button button-primary specialty art-highlight" href="#">ART</span>
+                </div>
+            </div>
+    <!-- END Navigation -->
 
-  COLORS = [[85, 71, 106], [174, 61, 99], [219, 56, 83], [244, 92, 68], [248, 182, 70]];
+    <!-- Projects/Galleria -->
+            <div style="z-index: 5000" class="row">
+                <div class="parent" id="projects"></div>
+                <div class=" offset-by-one eleven columns">
+                    <div id="galleria"></div>
+                </div>
+            </div>
+    <!-- END Projects/Galleria -->
 
-  PI_2 = 2 * Math.PI;
+    <!-- Social Icons -->
+            <div class="social-container">
+                <div id="social-icons">
+                    <div><a href="https://ello.co/domu"><img href="https://ello.co/domu" id="ello" class="icon" src="images/blank-13.png"></a></div>
+                    <div><a href="https://github.com/domuttel"><img id="github" class="icon" src="images/blank-13.png"></a></div>
+                    <div><a href="http://cargocollective.com/DoFRAN"><img id="cargo" class="icon" src="images/blank-13.png"></a></div>
+                    <div><a href="https://twitter.com/DOMUconcept"><img id="twitter" class="icon" src="images/blank-13.png"></a></div>
+                    <div><a href="https://www.linkedin.com/in/domuttel"><img id="linked" class="icon" src="images/blank-13.png"></a></div>
+                </div>
+            </div>
+    <!-- END Social Icons -->
 
-  canvas = document.getElementById("world");
+    <!-- About Button -->
+            <div id="about-me">
+                <a class="button">ABOUT</a>
+            </div>
+    <!-- END About Button -->
 
-  context = canvas.getContext("2d");
+        </div>
+<!-- END Main Container -->
 
-  window.w = 0;
+<!-- About Container -->
+        <div id="about-me-info" class="container">
+            <div class="row">
+                <div  class="six columns">
+                    <div class="button back-button"><-</div>
+                </div>
+                <div class="six columns">
+                    <div class="phone contact-me">+1.970.420.6721</div>
+                    <div class="email contact-me">dominic.muttel@gmail.com</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns">
+                    <h2>
+                    I am a full-stack web developer and visual designer based in Denver, CO with over 5 years experience in visual art, branding, and graphic design. My intrests rest in finding creative solutions that activate the user experience through beautiful interfaces.
+                    </h2>
+                </div>
+            </div>
+            <div id="center-outer"class="row">
+                <div id="center-inner" class="twelve columns">
+                    <a id="tech-btn" class="button button-primary" href="#">Technologies</a>
+                    <a id="skill-btn" class="button button-primary" href="#">Skills</a>
+                    <a id="int-btn" class="button button-primary" href="#">Interests</a>
+                    <a id="cv-btn" class="button button-primary" href="#">Cirricula Vitae</a>
+                </div>
+            </div>
+        </div>
+<!-- END About Container -->
 
-  window.h = 0;
+<!-- My Logo -->
+<div id="my-logo">
+    <img src="images/newLogowhite-01.png">
+</div>
+<!-- ENDMy Logo -->
 
-  resizeWindow = function() {
-    window.w = canvas.width = window.innerWidth;
-    return window.h = canvas.height = window.innerHeight;
-  };
-
-  window.addEventListener('resize', resizeWindow, false);
-
-  window.onload = function() {
-    return setTimeout(resizeWindow, 0);
-  };
-
-  range = function(a, b) {
-    return (b - a) * Math.random() + a;
-  };
-
-  drawCircle = function(x, y, r, style) {
-    context.beginPath();
-    context.arc(x, y, r, 0, PI_2, false);
-    context.fillStyle = style;
-    return context.fill();
-  };
-
-  xpos = 0.5;
-
-  document.onmousemove = function(e) {
-    return xpos = e.pageX / w;
-  };
-
-  window.requestAnimationFrame = (function() {
-    return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function(callback) {
-      return window.setTimeout(callback, 1000 / 60);
-    };
-  })();
-
-  Confetti = (function() {
-    function Confetti() {
-      this.style = COLORS[~~range(0, 5)];
-      this.rgb = "rgba(" + this.style[0] + "," + this.style[1] + "," + this.style[2];
-      this.r = ~~range(2, 6);
-      this.r2 = 2 * this.r;
-      this.replace();
-    }
-
-    Confetti.prototype.replace = function() {
-      this.opacity = 0;
-      this.dop = 0.03 * range(1, 4);
-      this.x = range(-this.r2, w - this.r2);
-      this.y = range(-20, h - this.r2);
-      this.xmax = w - this.r;
-      this.ymax = h - this.r;
-      this.vx = range(0, 2) + 8 * xpos - 5;
-      return this.vy = 0.7 * this.r + range(-1, 1);
-    };
-
-    Confetti.prototype.draw = function() {
-      var ref;
-      this.x += this.vx;
-      this.y += this.vy;
-      this.opacity += this.dop;
-      if (this.opacity > 1) {
-        this.opacity = 1;
-        this.dop *= -1;
-      }
-      if (this.opacity < 0 || this.y > this.ymax) {
-        this.replace();
-      }
-      if (!((0 < (ref = this.x) && ref < this.xmax))) {
-        this.x = (this.x + this.xmax) % this.xmax;
-      }
-      return drawCircle(~~this.x, ~~this.y, this.r, this.rgb + "," + this.opacity + ")");
-    };
-
-    return Confetti;
-
-  })();
-
-  confetti = (function() {
-    var j, ref, results;
-    results = [];
-    for (i = j = 1, ref = NUM_CONFETTI; 1 <= ref ? j <= ref : j >= ref; i = 1 <= ref ? ++j : --j) {
-      results.push(new Confetti);
-    }
-    return results;
-  })();
-
-  window.step = function() {
-    var c, j, len, results;
-    requestAnimationFrame(step);
-    context.clearRect(0, 0, w, h);
-    results = [];
-    for (j = 0, len = confetti.length; j < len; j++) {
-      c = confetti[j];
-      results.push(c.draw());
-    }
-    return results;
-  };
-
-  step();
-
-}).call(this);
-    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="js/galleria/galleria-1.4.2.js" ></script>
+    <!-- ^ change to minified after done-->
+    <script type="text/javascript" src="js/gallery.js"></script>
+    <script src="
+https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
