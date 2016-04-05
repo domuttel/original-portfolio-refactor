@@ -1,0 +1,152 @@
+/*HTML elements*/
+/*Box-sizing w inheritence*/
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  z-index: -1000;
+  cursor: crosshair;
+  background-size: 100%;
+  height: 100vh;
+  background: linear-gradient(to left bottom,  #6BB7A6 50%, rgba(0,0,0,0) 50%),
+  url(../images/rockRepeat.gif);
+}
+
+#projects {
+  position: absolute;
+  top: 50px;
+  left:0;
+  float: left;
+}
+
+#my-logo {
+  position:fixed;
+  top:-12px;
+  left:6%;
+  z-index: -100;
+
+}
+/*Galleria height*/
+#galleria {
+    min-height: 600px;
+    max-width: 100%;
+    min-width: 60%;
+}
+
+.galleria-thumbnails { margin: 0 auto; }
+.galleria-thumbnails .galleria-image {
+  margin-top: 8px;
+  width: 10px !important;
+  height: 10px !important;
+  background: white !important;
+  border: solid white 1px !important;
+  border-radius: 10px !important;
+  color: white;
+}
+.galleria-thumbnails .galleria-image.active {
+  background: black !important;
+   border: solid black 1px !important;
+   border-radius: 10px !important;
+   color: transparent;
+}
+@media (min-width: 750px) {
+  .parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
+  .child{text-align:left;display:table-row;}
+}
+
+#social-icons {
+  position: fixed;
+  bottom: 40%;
+  right:10px;
+}
+  #ello {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/indivIconsReg-02.png);
+  }
+  #github {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/indivIconsReg-04.png);
+  }
+  #cargo {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/indivIconsReg-06.png);
+  }
+  #twitter {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/indivIconsReg-08.png);
+  }
+  #linked {
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/indivIconsReg-10.png);
+  }
+
+  #ello:hover {
+    background-image: url(../images/indivIconsHover-01.png);
+  }
+  #github:hover {
+    background-image: url(../images/indivIconsHover-03.png);
+  }
+  #cargo:hover {
+    background-image: url(../images/indivIconsHover-05.png);
+  }
+  #twitter:hover {
+    background-image: url(../images/indivIconsHover-07.png);
+  }
+  #linked:hover {
+    background-image: url(../images/indivIconsHover-09.png);
+  }
+/*END Social Icons*/
+
+/*About Me Button*/
+#about-me{
+  color: white;
+  position: fixed;
+  bottom: 50%;
+  left:0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#about-me:hover{
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+/*END About Me Button*/
+
+/*About Me Information*/
+#about-me-info {
+  display: none;
+}
+
+#skill-info{
+  display: none;
+}
+.about-info{
+  margin-top: -10px;
+    background-color: transparent;
+  color: white;
+  padding: 50px;
+  border: 2px solid white;
+}
+#center-outer { text-align: center; }
+/*END About Me Information*/
+

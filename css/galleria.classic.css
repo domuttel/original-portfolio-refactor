@@ -1,10 +1,12 @@
 /* Galleria Classic Theme 2012-08-07 | https://raw.github.com/aino/galleria/master/LICENSE | (c) Aino */
-#galleria-loader{height:120px!important}
-.galleria-thumbnails { margin: auto}
+
+#galleria-loader{height:1px!important}
+
 .galleria-theme-classic {
+    z-index: 0;
     position: relative;
     overflow: hidden;
-    background: rgba(235, 68, 48, 1);
+    background: transparent;
 }
 .galleria-theme-classic img {
     -moz-user-select: none;
@@ -25,7 +27,7 @@
     position: absolute;
     left: 10px;
     right: 10px;
-    z-index: 200;
+    z-index: 2;
 }
 .galleria-theme-classic .galleria-carousel .galleria-thumbnails-list {
     margin-left: 30px;
@@ -34,7 +36,7 @@
 .galleria-theme-classic .galleria-thumbnails .galleria-image {
     height: 40px;
     width: 60px;
-    /*background: #000;*/
+    background: #000;
     margin: 0 5px 0 0;
     border: 1px solid #000;
     float: left;
@@ -47,28 +49,28 @@
     text-align: right;
     color: #fff;
     font: normal 11px/1 arial,sans-serif;
-    z-index: 100;
+    z-index: 1;
 }
 .galleria-theme-classic .galleria-loader {
-    /*background: none;*/
-    width: 361px;
-    height: 49px;
-    position: fixed;
-    top: 100px;
-    right:50%;
-    z-index: 9999;
-    /*display: none;*/
-    background: url(../images/eyeLoader.gif);
+    background: #000;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    display: none;
+    background: url(../images/classic-loader.gif) no-repeat 2px 2px;
 }
 .galleria-theme-classic .galleria-info {
     width: 50%;
     top: 15px;
     left: 15px;
-    z-index: 200;
+    z-index: 2;
     position: absolute;
 }
 .galleria-theme-classic .galleria-info-text {
-    /*background-color: #000;*/
+    background-color: #000;
     padding: 12px;
     display: none;
     /* IE7 */ zoom:1;
@@ -112,7 +114,7 @@
     width: 20px;
     height: 20px;
     cursor: pointer;
-    /*background-color: #000;*/
+    background-color: #000;
 }
 .galleria-theme-classic.notouch .galleria-info-link:hover {
     opacity: 1;
@@ -139,14 +141,14 @@
     height: 124px;
     position: absolute;
     left: 10px;
-    z-index: 200;
+    z-index: 2;
     background-position: 0 46px;
 }
 .galleria-theme-classic .galleria-image-nav-right {
     left: auto;
     right: 10px;
     background-position: -254px 46px;
-    z-index: 200;
+    z-index: 2;
 }
 .galleria-theme-classic.notouch .galleria-image-nav-left:hover,
 .galleria-theme-classic.notouch .galleria-image-nav-right:hover {
@@ -163,15 +165,15 @@
     cursor: pointer;
     display: none;
     background-position: -495px 5px;
+    position: absolute;
     left: 0;
     top: 0;
     height: 40px;
     width: 23px;
-    z-index: 300;
+    z-index: 3;
     opacity: .8;
     filter: alpha(opacity=80);
 }
-
 .galleria-theme-classic .galleria-thumb-nav-right {
     background-position: -578px 5px;
     border-right: none;
@@ -211,7 +213,7 @@
 .galleria-theme-classic .galleria-info-close,
 .galleria-theme-classic .galleria-image-nav-left,
 .galleria-theme-classic .galleria-image-nav-right {
-    background-image: url(../images/my-map.png);
+    background-image: url(../images/classic-map.png);
     background-repeat: no-repeat;
 }
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,

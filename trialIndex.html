@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Dominic Muttel Portfolio</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="Dominic Muttel">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="css/skeleton.css">
+        <link rel="stylesheet" type="text/css" href="css/main-clean.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+        <style type="text/css">
+        #center-nav-main{ text-align: center;  width: 100%;  margin:0 auto;   -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box; box-sizing: border-box; }
+        .sm-nav-main { text-align: center; border: 2px solid transparent;}
+        .sm-nav-main:hover { text-align: center; border: 2px black solid; }
+
+
+
+
+            .column, .columns { margin: 0; width: 0; float: left; box-sizing: border-box;}
+            .one-third.column { width: 33.3%;}
+            .one.columns { width: 8.3%; }
+            .ten.columns { width: 83.3%; }
+            .twelve.columns { width: 600px; }
+            #center-nav-main{ text-align: center; margin: 0 auto; width: 80%;     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;}
+        .sm-nav-main { margin: 35px 0; text-align: center; border: 2px solid transparent;}
+        .sm-nav-main:hover { margin: 35px 0; text-align: center; border: 2px black solid; }
+
+        #center-nav-sub{ text-align: center; }
+        .nav-sub { /*padding: 5px 0;*/ text-align: center; /*border: 2px black solid;*/ }
+        /*.nav-sub-imgs { width:40%; }*/
+        #left-arrow { padding: 5px; }
+        #right-arrow { padding: 5px; }
+        #left-arrow:hover { padding: 5px; background-color: black; color: white; }
+        #right-arrow:hover { padding: 5px; background-color: black; color: white; }
+        div.demo { display: table; width: 100%; table-layout: fixed; padding-top:12px;}
+        div.demo span { display: table-cell; text-align: center; }
+        /*div.demo span:first-child { text-align: left; }
+        div.demo span:last-child { text-align: right; }*/
+
+        #title-hover { position: relative; height: 300px; top: 150px; left: -358px; -webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -ms-transform: rotate(90deg); -o-transform: rotate(90deg); transform: rotate(90deg); }
+        #title-project { background-color: white; height: 100%; }
+
+        </style>
+    </head>
+
+    <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function(){
+
+            // setInterval(slide, 4000); // Set interval, callback function, and how often to swap slide
+var neewb = $(".demo").find("#title-hover");
+console.log(neewb);
+            // function slide() {
+            //     $('div.active').removeClass('active').fadeOut(500, function() {
+            //         if($(this).next('div.slide').length) {
+            //             $(this).next('div.slide').addClass('active').fadeIn(500);
+            //         } else {
+            //             $('div.slide').eq(0).addClass('active').fadeIn(500);
+            //         }
+
+            //     });
+            // }
+            var index;
+            $( ".nav-sub-imgs" ).click(function(e) {
+                index = $( ".nav-sub-imgs" ).index( this );
+                // console.log("inside: " + index);
+            });
+            // console.log("outside");
+
+            $("#left-arrow").on('click', function(){
+                // console.log(this);
+                $(this).css('background-color', 'black').css('color', 'white');
+            });
+            $("#right-arrow").on('click', function(){
+                $(this).css('background-color', 'black').css('color', 'white');
+            });
+
+            var placeHolder = $(
+                "<div class='twelve columns' id='title-hover'>" +
+                    "<span id='no-back'>" +
+                        "------" +
+                    "</span>" +
+                    "<span id='title-project'>" +
+                        "THIS WILL BE THE TITLE" +
+                    "</span>" +
+                "</div>" );
+
+            $( "span" ).click(function() {
+                $( this ).append( placeHolder );
+            });
+
+        });
+
+    </script>
+    <div class="row">
+        <div class="twelve columns">---- YO!</div>
+    </div>
+
+        <div class="container">
+            <div id="center-nav-main" class="row">
+                <div class="one-third column sm-nav-main">dev</div>
+                <div class="one-third column sm-nav-main">design</div>
+                <div class="one-third column sm-nav-main">art</div>
+            </div>
+            <div id="center-nav-sub" class="row">
+                <div id="left-arrow" class="one columns nav-sub"> < </div>
+                <div  class="ten columns nav-sub">
+                    <div class="demo">
+                        <span class="nav-sub-imgs" data-a="">&#x25EF;</span>
+                        <span class="nav-sub-imgs">&#x25EF;</span>
+                        <span class="nav-sub-imgs">&#x25EF;</span>
+                        <span class="nav-sub-imgs">&#x25EF;</span>
+                        <span class="nav-sub-imgs">&#x25EF;</span>
+                    </div>
+                </div>
+                <div id="right-arrow" class="one columns nav-sub"> > </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -2343,8 +2343,8 @@ Galleria = function() {
             }
         },
 
-        hide: function() {
-
+        hide: function(e) {
+            e.preventDefault();
             // remove the image
             lightbox.image.image = null;
 
@@ -2608,7 +2608,7 @@ Galleria.prototype = {
             idleSpeed: 200,
             imageCrop: false,
             imageMargin: 0,
-            imagePan: true,
+            imagePan: false,
             imagePanSmoothness: 12,
             imagePosition: '50%',
             imageTimeout: undef, // 1.2.5
@@ -2622,7 +2622,7 @@ Galleria.prototype = {
             maxScaleRatio: undef,
             maxVideoSize: undef, // 1.2.9
             minScaleRatio: undef, // deprecated in 1.2.9
-            overlayOpacity: 1,
+            overlayOpacity: 0.85,
             overlayBackground: '#0b0b0b',
             pauseOnInteraction: true,
             popupLinks: false,
@@ -2640,8 +2640,8 @@ Galleria.prototype = {
             thumbMargin: 0,
             thumbQuality: 'auto',
             thumbDisplayOrder: true, // 1.2.8
-            thumbPosition: '90%', // 1.3
-            thumbnails: false,
+            thumbPosition: '50%', // 1.3
+            thumbnails: true,
             touchTransition: undef, // 1.2.6
             transition: 'fade',
             transitionInitial: undef, // legacy, deprecate in 1.3. Use initialTransition instead.

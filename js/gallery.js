@@ -1,31 +1,48 @@
 // WEB OBJECTS
     var webProjects = [
         {
-            iframe: 'http://linq-quiz-tics.herokuapp.com/',
-            thumb: 'images/galleries/webThumbs/ling-Quiz-Tics.png'
+            image: 'images/galleries/webThumbs/ling-desktop-1.png',
+            title: '',
+            description: '',
+            thumb: ''
         },
         {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-02.png',
+            image: 'images/galleries/webThumbs/ling-desktop-2.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/Mock-up-pirate-03.png',
+            image: 'images/galleries/webThumbs/ling-desktop-3.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/pirateMobile.png',
+            image: 'images/galleries/webThumbs/pirate-desktop-1.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/webThumbs/wordcloudTown.png',
+            image: 'images/galleries/webThumbs/pirate-desktop-2.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/logo/10.jpg',
+            image: 'images/galleries/webThumbs/pirate-mobile-1.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/webThumbs/pirate-mobile-2.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/webThumbs/wordcloud-desktop-1.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/webThumbs/csr-desktop-1.png',
             title: '',
             description: ''
         },
@@ -311,40 +328,115 @@
 // GRAPHIC OBJECTS
     var identity = [
         {
-            image: 'images/galleries/logo/8.jpg',
+            image: 'images/galleries/logo/honey-fox.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/logo/9.jpg',
+            image: 'images/galleries/logo/honey-fox-fourup.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/logo/1.jpg',
+            image: 'images/galleries/logo/honey-fox-label.png',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/logo/4.jpg',
+            image: 'images/galleries/logo/domu-logo.gif',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/logo/6.jpg',
+            image: 'images/galleries/logo/domu-print-media.png',
             title: '',
             description: ''
-        }
+        },
+        {
+            image: 'images/galleries/logo/domu-falling.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/csr-main-logo.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/CSR-identity.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/csr-truck-1.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/r12-logo-main.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/r12-goods.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/r12-book.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/3people-typewriter.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/three-people-identity.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/3people-book.png',
+            title: '',
+            description: ''
+        },
 
     ];
     var print = [
         {
-            image: 'images/galleries/posters/1.jpg',
+            image: 'images/galleries/posters/paw-three.gif',
             title: '',
             description: ''
         },
         {
-            image: 'images/galleries/posters/5.jpg',
+            image: 'images/galleries/posters/constructive.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/posters/project-or.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/posters/arte-chicano.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/posters/six-cam-back.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/posters/hgz-album.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/posters/skyline-surrender.png',
             title: '',
             description: ''
         },
@@ -353,33 +445,8 @@
             title: '',
             description: ''
         },
-        {
-            image: 'images/galleries/posters/hgz.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/posters/12.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/emmanuelConfluence/postcardLayout.png',
-            title: '',
-            description: ''
-        },
     ];
     var public = [
-        {
-            image: 'images/galleries/grassIsGreener/0.jpg',
-            title: '',
-            description: ''
-        },
-        {
-            image: 'images/galleries/grassIsGreener/postcardLayout.png',
-            title: '',
-            description: ''
-        },
         {
             image: 'images/galleries/grassIsGreener/1.jpg',
             title: '',
@@ -388,6 +455,16 @@
         {
             iframe: 'http://player.vimeo.com/video/35041591',
             thumb: 'images/galleries/grassIsGreener/grassIsGreenerThumb.png',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/tmmh.gif',
+            title: '',
+            description: ''
+        },
+        {
+            image: 'images/galleries/logo/pop-quiz.gif',
             title: '',
             description: ''
         },
