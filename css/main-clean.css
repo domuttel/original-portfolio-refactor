@@ -21,12 +21,6 @@ body {
   url(../images/rockRepeat.gif);
 }
 
-#projects {
-  position: absolute;
-  top: 50px;
-  left:0;
-  float: left;
-}
 
 #my-logo {
   position:fixed;
@@ -37,9 +31,8 @@ body {
 }
 /*Galleria height*/
 #galleria {
-    min-height: 600px;
-    max-width: 100%;
-    min-width: 60%;
+    min-height: 500px;
+    width: 100%;
 }
 
 .galleria-thumbnails { margin: 0 auto; }
@@ -58,10 +51,16 @@ body {
    border-radius: 10px !important;
    color: transparent;
 }
-@media (min-width: 750px) {
-  .parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
-  .child{text-align:left;display:table-row;}
+
+#projects {
+  position: absolute;
+  top: 50px;
+  left:0;
+  float: left;
 }
+.parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
+.child{text-align:left;display:table-row;}
+
 
 #social-icons {
   position: fixed;
@@ -133,20 +132,40 @@ body {
 /*END About Me Button*/
 
 /*About Me Information*/
+.back-button{
+  margin-right: -10px;
+}
 #about-me-info {
   display: none;
 }
-
-#skill-info{
-  display: none;
+#about-me-info, #about-me-info:first-child{
+  margin-top: 50px;
+}
+#about-me-info, h2 {
+  margin-top: 50px;
 }
 .about-info{
   margin-top: -10px;
-    background-color: transparent;
+  background-color: transparent;
   color: white;
   padding: 50px;
   border: 2px solid white;
 }
 #center-outer { text-align: center; }
 /*END About Me Information*/
+.hide-info { display: none; }
+#skill-info{ display: none; }
+#tech-info{ display: none; }
+#contact-info{ display: none; }
+#cv-info{ display: none; }
 
+@media (max-width: 890px) {
+  #projects{
+    position: fixed;
+    right: 50%;
+    top:50px;
+    text-align: center;
+    z-index: 9999;
+  }
+
+}

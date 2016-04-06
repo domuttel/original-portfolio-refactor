@@ -1,23 +1,38 @@
 $(document).on('ready', function() {
 
-$("#about-me").click(function(){
+$("#about-me").on('click', function(){
     $("#hidden-on-about").hide();
-    $("#about-me-info").show();
+    $("#about-me-info").slideDown();
 });
 
 $(".back-button").click(function(){
     $("#about-me-info").hide();
-    $("#hidden-on-about").show();
+    $("#hidden-on-about").slideDown();
 });
 
-var techz =$( "<div class='twelve columns about-info'><h3>Adobe Creative Suite, HTML, CSS, JavaScript, jQuery, Angular, Handlebars, Node, Express, MongoDB, SQL, GitHub</h3></div>");
-var skillz = $("<div class='twelve columns about-info'><h3> Wireframing, Prototyping, UX/UI, Branding & Identity</h3></div>");
-
-$("#skill-btn").click(function(){
-    $("#center-inner").append(skillz);
-});
 $("#tech-btn").click(function(){
-    $("#center-inner").append(techz);
+    $("#tech-info").slideDown();
+    $("#skill-info").hide();
+    $("#cv-info").hide();
+    $("#contact-info").hide();
+});
+$("#skill-btn").on('click', function(){
+    $("#tech-info").hide();
+    $("#skill-info").slideDown();
+    $("#cv-info").hide();
+    $("#contact-info").hide();
+});
+$("#cv-btn").click(function(){
+    $("#tech-info").hide();
+    $("#skill-info").hide();
+    $("#cv-info").slideDown();
+    $("#contact-info").hide();
+});
+$("#contact-btn").click(function(){
+    $("#tech-info").hide();
+    $("#skill-info").hide();
+    $("#cv-info").hide();
+    $("#contact-info").slideDown();
 });
 
 
@@ -26,27 +41,22 @@ $("#tech-btn").click(function(){
 
 
     console.log("Yo, I work it.");
-// if ( width < 760) { $('#projects').remove(); }
     $( window ).resize(function(e) {
         e.preventDefault();
         var width = $(window).width();
         var height = $(window).height();
-        console.log('window width: '+ width +' & '+ 'window height: ' + height);
-        if ( width < 750) {
-            console.log("hit size");
-            // $('.u-pull-right').removeClass('u-pull-right');
-            $('#projects').hide();
-            console.log($('#projects').remove());
+console.log('window width: '+ width +' & '+ 'window height: ' + height);
+        if ( width < 890) {
+console.log("hit size");
+
+            $('#top-offset').first().addClass('u-pull-right');
+
+// console.log($('#projects').remove());
         }
-        // else {
-
-        // }
+        else if (width > 890) {
+            $('#top-offset').first().removeClass('u-pull-right');
+        }
     });
-
-
-    // else if ( $(window).width() < 480){
-    //   //Add your javascript for small screens here
-    // }
 
 
 // Create variable to be able to pull index from function
@@ -100,10 +110,13 @@ $("#tech-btn").click(function(){
         e.preventDefault();
         var indexOfArtGal = $( ".image-gallery" ).index( this );
         if (index === 2) {
-            if(indexOfArtGal === 0) { loadGalleria(tvAbstract); }
+            if(indexOfArtGal === 0)       { loadGalleria(tvAbstract); }
             else if(indexOfArtGal == 1)   { loadGalleria(noesis); }
             else if(indexOfArtGal == 2)   { loadGalleria(teleVis); }
-            else if(indexOfArtGal == 3)   { loadGalleria(meetingsInHWood); }
+            else if(indexOfArtGal == 3)   { loadGalleria(meetingsInHWood);
+                        $("#project-description").append(
+                "<div class='twelve columns'><h4>Project:</h4><p>Web Dev Port</p></div>"
+                );}
             else if(indexOfArtGal === 4)  { loadGalleria(remotePatterns); }
             else                          { loadGalleria(hands); }
         }
@@ -120,7 +133,7 @@ $("#tech-btn").click(function(){
         }
     });
     //----------------------------------------------
-
+console.log(webProjects);
 // Load Galleria Theme
     Galleria.loadTheme('js/galleria/galleria.classic.js');
 
