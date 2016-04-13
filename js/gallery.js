@@ -1,9 +1,10 @@
 // WEB OBJECTS
     var webProjects = [
+
         {
             image: 'images/galleries/webThumbs/ling-desktop-1.png',
-            title: '',
-            description: '',
+            title: 'BLAGH',
+            description: 'THIS AUIDSF JASDJF AJSDF ADSF JASDFI ASDIFGASIF GSIRG ASIG VASODII ADFSIGADF SGAISFB IAFDIV IDSV IASDIV ISDA VIASDIV ASDIVIASDIVIASDFIVIASDIVAISDFIVISDFVIASDIVAISDFVISDFIGHIS DFIG IAFDGIARI GGISDF IG GSIDFI FGD ISFDB IGSF ISGDF ISFDG IDGFS II DGS ISDG',
             thumb: ''
         },
         {

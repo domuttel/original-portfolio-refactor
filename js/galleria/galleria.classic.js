@@ -25,7 +25,7 @@ Galleria.addTheme({
     init: function(options) {
 
         Galleria.requires(1.4, 'This version of Classic theme requires Galleria 1.4 or later');
-
+console.log(this);
         // add some elements
         this.addElement('info-link','info-close');
         this.append({
@@ -35,7 +35,8 @@ Galleria.addTheme({
         // cache some stuff
         var info = this.$('info-link,info-close,info-text'),
             touch = Galleria.TOUCH;
-
+console.log(info);
+$("#project-info").html(info);
         // show loader & counter with opacity
         this.$('loader,counter').show().css('opacity', 0.4);
 

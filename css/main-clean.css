@@ -17,17 +17,28 @@ body {
   cursor: crosshair;
   background-size: 100%;
   height: 100vh;
-  background: linear-gradient(to left bottom,  #6BB7A6 50%, rgba(0,0,0,0) 50%),
-  url(../images/rockRepeat.gif);
+  background: linear-gradient(to right bottom,  #ffe8e7 50%, #daf0e6 50%);
 }
 
 
 #my-logo {
+    position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 1000px;
+  height: 400px;
+
+
+  z-index: -100;
+}
+#my-name {
   position:fixed;
   top:-12px;
   left:6%;
   z-index: -100;
-
 }
 /*Galleria height*/
 #galleria {
@@ -54,118 +65,122 @@ body {
 
 #projects {
   position: absolute;
-  top: 50px;
-  left:0;
+  top: 120px;
+  right:0;
   float: left;
 }
 .parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
-.child{text-align:left;display:table-row;}
+.child{text-align:right;display:table-row;}
 
 
 #social-icons {
+  /*display   : none;*/
   position: fixed;
-  bottom: 40%;
-  right:10px;
+  bottom: -10px;
+  left:20%;
 }
-  #ello {
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/indivIconsReg-02.png);
+  #back {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-07.png);
   }
-  #github {
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/indivIconsReg-04.png);
-  }
-  #cargo {
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/indivIconsReg-06.png);
-  }
-  #twitter {
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/indivIconsReg-08.png);
+/*  #about-me {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-06.png);
+  }*/
+  #email {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-01.png);
   }
   #linked {
-    height: 50px;
-    width: 50px;
-    background-image: url(../images/indivIconsReg-10.png);
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-02.png);
+  }
+  #github {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-03.png);
+  }
+  #twitter {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-04.png);
+  }
+  #cargo {
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/social-icons/icons-05.png);
+  }
+  #back:hover {
+    background-image: url(../images/social-icons/hover-icons-14.png);
   }
 
-  #ello:hover {
-    background-image: url(../images/indivIconsHover-01.png);
-  }
-  #github:hover {
-    background-image: url(../images/indivIconsHover-03.png);
-  }
-  #cargo:hover {
-    background-image: url(../images/indivIconsHover-05.png);
-  }
-  #twitter:hover {
-    background-image: url(../images/indivIconsHover-07.png);
+  #email:hover {
+    background-image: url(../images/social-icons/icons-08.png);
   }
   #linked:hover {
-    background-image: url(../images/indivIconsHover-09.png);
+    background-image: url(../images/social-icons/hover-icons-09.png);
+  }
+  #github:hover {
+    background-image: url(../images/social-icons/hover-icons-10.png);
+  }
+  #twitter:hover {
+    background-image: url(../images/social-icons/hover-icons-11.png);
+  }
+  #cargo:hover {
+    background-image: url(../images/social-icons/hover-icons-12.png);
   }
 /*END Social Icons*/
 
-/*About Me Button*/
-#about-me{
-  color: white;
-  position: fixed;
-  bottom: 50%;
-  left:0;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-#about-me:hover{
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  transform: rotate(0deg);
-}
-/*END About Me Button*/
 
 /*About Me Information*/
 .back-button{
-  margin-right: -10px;
+  /*margin-right: -10px;*/
 }
 #about-me-info {
   display: none;
+  background-size: 100vh;
 }
 #about-me-info, #about-me-info:first-child{
-  margin-top: 50px;
+  margin-top: 30px;
 }
-#about-me-info, h2 {
-  margin-top: 50px;
+#about-me-info, h5 {
+  margin-top: 20px;
 }
 .about-info{
-  margin-top: -10px;
+  margin-top: -60px;
   background-color: transparent;
-  color: white;
-  padding: 50px;
-  border: 2px solid white;
+  /*color: white;*/
+  padding: 20px;
+  /*border: 2px solid white;*/
 }
-#center-outer { text-align: center; }
-/*END About Me Information*/
-.hide-info { display: none; }
-#skill-info{ display: none; }
-#tech-info{ display: none; }
-#contact-info{ display: none; }
-#cv-info{ display: none; }
+@media (min-width: 550px) {
+.about-info{
+  margin-top: -60px;
+  background-color: transparent;
+  /*color: white;*/
+  padding: 100px;
+  /*border: 2px solid white;*/
+}
+}
+div.galleria-image-nav-left{
+  display: none;
+}
 
-@media (max-width: 890px) {
-  #projects{
-    position: fixed;
-    right: 50%;
-    top:50px;
-    text-align: center;
-    z-index: 9999;
-  }
 
+
+#projects span {
+  background-color: white;
+  padding: 10px;
+}
+#projects span:hover {
+  background-color: transparent;
+  padding: 10px;
+}
+
+#top-offset {
+  margin-bottom: 50px;
 }

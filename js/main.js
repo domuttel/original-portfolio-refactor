@@ -1,5 +1,7 @@
 $(document).on('ready', function() {
 
+    $("#project-info").html("<div class='galleria-info-link'></div>");
+
 $("#about-me").on('click', function(){
     $("#hidden-on-about").hide();
     $("#about-me-info").slideDown();
@@ -10,41 +12,46 @@ $(".back-button").click(function(){
     $("#hidden-on-about").slideDown();
 });
 
-$("#tech-btn").click(function(){
+$("#tech-btn").click(function(e){
+    e.stopPropagation();
+    e.preventDefault();
     $("#tech-info").slideDown();
     $("#skill-info").hide();
-    $("#cv-info").hide();
-    $("#contact-info").hide();
+    // $("#cv-info").hide();
+    // $("#contact-info").hide();
 });
-$("#skill-btn").on('click', function(){
+$("#skill-btn").on('click', function(e){
+    e.stopPropagation();
+    e.preventDefault();
     $("#tech-info").hide();
     $("#skill-info").slideDown();
-    $("#cv-info").hide();
-    $("#contact-info").hide();
+    // $("#cv-info").hide();
+    // $("#contact-info").hide();
 });
-$("#cv-btn").click(function(){
-    $("#tech-info").hide();
-    $("#skill-info").hide();
-    $("#cv-info").slideDown();
-    $("#contact-info").hide();
-});
-$("#contact-btn").click(function(){
-    $("#tech-info").hide();
-    $("#skill-info").hide();
-    $("#cv-info").hide();
-    $("#contact-info").slideDown();
-});
+// $("#cv-btn").click(function(){
+//     $("#tech-info").hide();
+//     $("#skill-info").hide();
+//     $("#cv-info").slideDown();
+//     $("#contact-info").hide();
+// });
+// $("#contact-btn").click(function(){
+//     $("#tech-info").hide();
+//     $("#skill-info").hide();
+//     $("#cv-info").hide();
+//     $("#contact-info").slideDown();
+// });
 
 
 
-
+var width;
+var height;
 
 
     console.log("Yo, I work it.");
     $( window ).resize(function(e) {
         e.preventDefault();
-        var width = $(window).width();
-        var height = $(window).height();
+        width = $(window).width();
+        height = $(window).height();
 console.log('window width: '+ width +' & '+ 'window height: ' + height);
         if ( width < 890) {
 console.log("hit size");
@@ -67,7 +74,7 @@ console.log("hit size");
         e.preventDefault();
         // `this` is the DOM element that is clicked
         index = $( ".specialty" ).index( this );
-        var partA = '<div class="button image-gallery child" href="#">';
+        var partA = '<div class="button image-gallery child">';
         var partB = '</div>';
         var dev = ".dev-highlight";
         var des = ".des-highlight";
@@ -77,29 +84,29 @@ console.log("hit size");
 
             loadGalleria(webProjects);
             $( "#projects" ).html(
-                partA + 'LinkQuizTics' + partB +
-                partA + 'Pirate' + partB +
-                partA + 'Wordcloud Town' + partB  +
-                partA + 'CSR' + partB
+                partA + '<span>LinkQuikzTics</span>' + partB +
+                partA + '<span>Pirate</span>' + partB +
+                partA + '<span>Wordcloud Town</span>' + partB  +
+                partA + '<span>CSR</span>' + partB
             ).addClass(dev); // <-- all addClasses are attaching to parent node
+
         }
         else if (index === 1){
             loadGalleria(identity);
             $( "#projects" ).html(
-                partA + 'Identity' + partB +
-                partA + 'Print' + partB +
-                partA + 'Public' + partB
+                partA + '<span>Identity</span>' + partB +
+                partA + '<span>Public</span>' + partB
              ).addClass(des);
         }
         else {
             loadGalleria(tvAbstract);
             $( "#projects" ).html(
-                partA + 'TV Abstractions' + partB +
-                partA + 'Noesis/Landscape' + partB +
-                partA + 'Television Vernacular' + partB +
-                partA + 'Meetings In Hollywood' + partB +
-                partA + 'Remote Patterns' + partB +
-                partA + 'Hands' + partB
+                partA + '<span>TV Abstractions</span>' + partB +
+                partA + '<span>Noesis/Landscape</span>' + partB +
+                partA + '<span>Television Vernacular</span>' + partB +
+                partA + '<span>Meetings In Hollywood</span>' + partB +
+                partA + '<span>Remote Patterns</span>' + partB +
+                partA + '<span>Hands</span>' + partB
              ).addClass(art);
         }
     });
@@ -114,22 +121,34 @@ console.log("hit size");
             else if(indexOfArtGal == 1)   { loadGalleria(noesis); }
             else if(indexOfArtGal == 2)   { loadGalleria(teleVis); }
             else if(indexOfArtGal == 3)   { loadGalleria(meetingsInHWood);
-                        $("#project-description").append(
+                        $("#project-description").html(
                 "<div class='twelve columns'><h4>Project:</h4><p>Web Dev Port</p></div>"
                 );}
             else if(indexOfArtGal === 4)  { loadGalleria(remotePatterns); }
-            else                          { loadGalleria(hands); }
+            else                          { loadGalleria(hands);
+            $("#project-description").html(
+                "<div class='twelve columns'><h4>FUN</h4><p>Web Dev Port</p></div>"
+                );
+        }
         }
         else if (index === 1){
             if(indexOfArtGal === 0)       { loadGalleria(identity); }
-            else if(indexOfArtGal == 1)   { loadGalleria(print); }
+            // else if(indexOfArtGal == 1)   { loadGalleria(print); }
             else                          { loadGalleria(public); }
         }
         else {
-            if (indexOfArtGal === 0){ loadGalleria(webProjects.slice(0, 3)); }
-            else if (indexOfArtGal === 1) { loadGalleria(webProjects.slice(3, 7)); }
-            else if (indexOfArtGal === 2) { loadGalleria(webProjects.slice(7, 8)); }
-            else if (indexOfArtGal === 3) { loadGalleria(webProjects.slice(8)); }
+            if (indexOfArtGal === 0){ loadGalleria(webProjects.slice(0, 3)); $("#project-description").html(
+                "<div class='twelve columns'><h4>LinkQuikzTics</h4><p>Web Dev Port</p></div>"
+                );}
+            else if (indexOfArtGal === 1) { loadGalleria(webProjects.slice(3, 7)); $("#project-description").html(
+                "<div class='twelve columns'><h4>Pirate</h4><p>SHIT</p></div>"
+                );}
+            else if (indexOfArtGal === 2) { loadGalleria(webProjects.slice(7, 8)); $("#project-description").html(
+                "<div class='twelve columns'><h4>Wordcloud Town</h4><p>SHIT</p></div>"
+                );}
+            else if (indexOfArtGal === 3) { loadGalleria(webProjects.slice(8)); $("#project-description").html(
+                "<div class='twelve columns'><h4>CSR</h4><p>SHIT</p></div>"
+                );}
         }
     });
     //----------------------------------------------
