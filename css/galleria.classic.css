@@ -52,15 +52,15 @@
     z-index: 1;
 }
 .galleria-theme-classic .galleria-loader {
-    background: #000;
-    width: 20px;
-    height: 20px;
+    /*background: #000;*/
+    width: 48px;
+    height: 48px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 50%;
+    right: 50%;
     z-index: 2;
     display: none;
-    background: url(../images/classic-loader.gif) no-repeat 2px 2px;
+    background: url(../images/loadit1.gif) no-repeat 2px 2px;
 }
 .galleria-theme-classic .galleria-info {
     /*width: 50%;*/
@@ -213,7 +213,7 @@
 .galleria-theme-classic .galleria-info-close,
 .galleria-theme-classic .galleria-image-nav-left,
 .galleria-theme-classic .galleria-image-nav-right {
-    background-image: url(../images/my-map.png);
+    background-image: url(../images/my-map-new.png);
     background-repeat: no-repeat;
 }
 .galleria-theme-classic.galleria-container.videoplay .galleria-info,

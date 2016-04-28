@@ -48,14 +48,14 @@ $("#project-info").html(info);
         }
 
         // toggle info
-        if ( options._toggleInfo === true ) {
-            info.bind( 'click:fast', function() {
-                info.toggle();
-            });
-        } else {
-            info.show();
-            this.$('info-link, info-close').hide();
-        }
+        // if ( options._toggleInfo === true ) {
+        //     info.bind( 'click:fast', function() {
+        //         info.toggle();
+        //     });
+        // } else {
+        //     info.show();
+        //     this.$('info-link, info-close').hide();
+        // }
 
         // bind some stuff
         this.bind('thumbnail', function(e) {

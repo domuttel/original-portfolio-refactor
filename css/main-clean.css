@@ -49,18 +49,15 @@ body {
 .galleria-thumbnails { margin: 0 auto; }
 .galleria-thumbnails .galleria-image {
   margin-top: 8px;
-  width: 10px !important;
-  height: 10px !important;
-  background: white !important;
-  border: solid white 1px !important;
-  border-radius: 10px !important;
-  color: white;
+  width: 24px !important;
+  height: 24px !important;
+  background: transparent !important;
+  border: none !important;
 }
 .galleria-thumbnails .galleria-image.active {
-  background: black !important;
-   border: solid black 1px !important;
+  background: white !important;
+   border: none !important;
    border-radius: 10px !important;
-   color: transparent;
 }
 
 #projects {
@@ -97,22 +94,22 @@ body {
   #linked {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/icons-02.png);
+    background-image: url(../images/social-icons/hover-icons-09.png);
   }
   #github {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/icons-03.png);
+    background-image: url(../images/social-icons/hover-icons-10.png);
   }
   #twitter {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/icons-04.png);
+    background-image: url(../images/social-icons/hover-icons-11.png);
   }
   #cargo {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/icons-05.png);
+    background-image: url(../images/social-icons/hover-icons-12.png);
   }
   #back:hover {
     background-image: url(../images/social-icons/hover-icons-14.png);
@@ -122,16 +119,16 @@ body {
     background-image: url(../images/social-icons/icons-08.png);
   }
   #linked:hover {
-    background-image: url(../images/social-icons/hover-icons-09.png);
+    background-image: url(../images/social-icons/icons-02.png);
   }
   #github:hover {
-    background-image: url(../images/social-icons/hover-icons-10.png);
+    background-image: url(../images/social-icons/icons-03.png);
   }
   #twitter:hover {
-    background-image: url(../images/social-icons/hover-icons-11.png);
+    background-image: url(../images/social-icons/icons-04.png);
   }
   #cargo:hover {
-    background-image: url(../images/social-icons/hover-icons-12.png);
+    background-image: url(../images/social-icons/icons-05.png);
   }
 /*END Social Icons*/
 
@@ -145,24 +142,24 @@ body {
   background-size: 100vh;
 }
 #about-me-info, #about-me-info:first-child{
-  margin-top: 30px;
+  margin-top: 0;
 }
 #about-me-info, h5 {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
 }
 .about-info{
-  margin-top: -60px;
+  /*margin-top: -60px;*/
   background-color: transparent;
   /*color: white;*/
-  padding: 20px;
+  /*padding: 20px;*/
   /*border: 2px solid white;*/
 }
 @media (min-width: 550px) {
 .about-info{
-  margin-top: -60px;
+  /*margin-top: -60px;*/
   background-color: transparent;
   /*color: white;*/
-  padding: 100px;
+  /*padding: 100px;*/
   /*border: 2px solid white;*/
 }
 }
@@ -183,4 +180,18 @@ div.galleria-image-nav-left{
 
 #top-offset {
   margin-bottom: 50px;
+}
+
+#center-about { text-align: center; }
+#justify-about { text-align: center; }
+@media (min-width: 550px) {
+  #justify-about { text-align: justify; }
+
+  }
+#social-gap{
+  margin-top: 40px;
+}
+#project-info{
+  display: inline-block;
+  color: #0060cb;
 }
