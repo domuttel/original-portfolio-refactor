@@ -17,12 +17,11 @@ body {
   cursor: crosshair;
   background-size: 100%;
   height: 100vh;
-  background: linear-gradient(to right bottom,  #ffe8e7 50%, #daf0e6 50%);
+  background: linear-gradient(to right bottom,  #daf0e6  20%, #fff8fa 70%);
 }
 
-
 #my-logo {
-    position: fixed;
+  position: fixed;
   margin: auto;
   top: 0;
   right: 0;
@@ -30,34 +29,37 @@ body {
   left: 0;
   width: 1000px;
   height: 400px;
-
-
   z-index: -100;
 }
+
 #my-name {
   position:fixed;
-  top:-12px;
+  top:0;
   left:6%;
   z-index: -100;
 }
+
 /*Galleria height*/
 #galleria {
-    min-height: 500px;
-    width: 100%;
+  min-height: 500px;
+  width: 100%;
 }
 
 .galleria-thumbnails { margin: 0 auto; }
 .galleria-thumbnails .galleria-image {
   margin-top: 8px;
-  width: 24px !important;
-  height: 24px !important;
-  background: transparent !important;
-  border: none !important;
+  width: 10px !important;
+  height: 10px !important;
+  background: white !important;
+  border: solid white 1px !important;
+  border-radius: 10px !important;
+  color: white;
 }
 .galleria-thumbnails .galleria-image.active {
-  background: white !important;
-   border: none !important;
-   border-radius: 10px !important;
+  background: black !important;
+  border: solid black 1px !important;
+  border-radius: 10px !important;
+  color: transparent;
 }
 
 #projects {
@@ -71,7 +73,6 @@ body {
 
 
 #social-icons {
-  /*display   : none;*/
   position: fixed;
   bottom: -10px;
   left:20%;
@@ -81,11 +82,6 @@ body {
     width: 40px;
     background-image: url(../images/social-icons/icons-07.png);
   }
-/*  #about-me {
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/social-icons/icons-06.png);
-  }*/
   #email {
     height: 40px;
     width: 40px;
@@ -134,9 +130,6 @@ body {
 
 
 /*About Me Information*/
-.back-button{
-  /*margin-right: -10px;*/
-}
 #about-me-info {
   display: none;
   background-size: 100vh;
@@ -145,36 +138,25 @@ body {
   margin-top: 0;
 }
 #about-me-info, h5 {
-  /*margin-top: 20px;*/
 }
 .about-info{
-  /*margin-top: -60px;*/
   background-color: transparent;
-  /*color: white;*/
-  /*padding: 20px;*/
-  /*border: 2px solid white;*/
 }
 @media (min-width: 550px) {
-.about-info{
-  /*margin-top: -60px;*/
-  background-color: transparent;
-  /*color: white;*/
-  /*padding: 100px;*/
-  /*border: 2px solid white;*/
-}
+  .about-info{
+    background-color: transparent;
+  }
 }
 div.galleria-image-nav-left{
   display: none;
 }
-
-
 
 #projects span {
   background-color: white;
   padding: 10px;
 }
 #projects span:hover {
-  background-color: transparent;
+  background-color: black;
   padding: 10px;
 }
 
@@ -184,8 +166,9 @@ div.galleria-image-nav-left{
 
 #center-about { text-align: center; }
 #justify-about { text-align: center; }
+
 @media (min-width: 550px) {
-  #justify-about { text-align: justify; }
+  #justify-about { text-align: left; }
 
   }
 #social-gap{
@@ -193,5 +176,5 @@ div.galleria-image-nav-left{
 }
 #project-info{
   display: inline-block;
-  color: #0060cb;
+  color: black;
 }
