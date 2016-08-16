@@ -1,31 +1,22 @@
-/*HTML elements*/
-/*Box-sizing w inheritence*/
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
 html {
     overflow-y: scroll;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
 }
 body::-webkit-scrollbar {
     width: 0;
 }
-
-
 body {
-  z-index: -1000;
-  cursor: crosshair;
-  background-size: 100%;
-  height: 100vh;
-  margin-bottom: 0rem;
-  background: linear-gradient(to right bottom,  #daf0e6  50%, transparent 50%);
+    z-index: -1000;
+    cursor: crosshair;
+    background-size: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom,  #daf0e6  50%, transparent 50%);
 }
-
+/* NAV */
 #my-nav{
     z-index: 9999;
     position: fixed;
@@ -40,214 +31,206 @@ body {
         margin-right:4rem;
     }
 }
-/*#my-blurb{
-    font-size: 1rem;
-}*/
-/*@media (min-width: 790px) {
-    .logo{
-        top:4%;
-    }
-}*/
+/* END NAV */
+/* LOGO / NAME */
 .logo{
     width: 30%;
-    /*min-width: */
     position: fixed;
     height:400px;
-    /*min-height: 90px;*/
-
     top: 11rem;
     left: 20%;
     z-index: -5000;
 }
 #my-logo {
-    /*vertical-align: top;*/
-background-image: url('../images/domu_logo-01.png');
-background-repeat: no-repeat;
-  /*margin: auto;*/
-background-size: 80%;
-background-position: top;
-min-width: 150px;
-/*min-width: 60px;*/
-  width: 100%;
-  max-width: 400px;
-  height: 100%;
-  /*min-width: 80%;*/
+    background-image: url('../images/domu_logo-01.png');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: top;
+    min-width: 150px;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
 }
 .name{
     max-width: 45rem;
     width: 40%;
     min-width: 34rem;
-    /*min-width: 15rem;*/
     position: fixed;
     height:40px;
     top: 2rem;
     left: 2.7rem;
-    /*z-index: -5000;*/
 }
 #my-name {
     background-image: url('../images/name-02-02.png');
-      /*margin: auto;*/
-      background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
-      width: 100%;
-      height: 100%;
+    width: 100%;
+    height: 100%;
 }
-
+/* END LOGO / NAME */
 /*Galleria height*/
 #galleria {
     margin-top: 5rem;
-  min-height: 500px;
-  width: 100%;
+    min-height: 500px;
+    width: 100%;
 }
-
 .galleria-thumbnails { margin: 0 auto; }
 .galleria-thumbnails .galleria-image {
-  /*margin-top: 150px !important;*/
-  width: 10px !important;
-  height: 10px !important;
-  background: white !important;
-  border: solid white 1px !important;
-  border-radius: 10px !important;
-  color: white;
+    width: 10px !important;
+    height: 10px !important;
+    background: white !important;
+    border: solid white 1px !important;
+    border-radius: 10px !important;
+    color: white;
 }
 .galleria-thumbnails .galleria-image.active {
-  background: black !important;
-  border: solid black 1px !important;
-  border-radius: 10px !important;
-  color: transparent;
+    background: black !important;
+    border: solid black 1px !important;
+    border-radius: 10px !important;
+    color: transparent;
 }
 
 #projects {
-  position: absolute;
-  top: 120px;
-  right:0;
-  float: left;
+    position: absolute;
+    top: 120px;
+    right:0;
+    float: left;
 }
-.parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
-.child{text-align:right;display:table-row;}
-#linkedin{
-    background-image: url();
-    src: url(https://www.linkedin.com/in/domuttel);
+.parent {
+    height:250px;
+    display:table;
+    border-spacing:5px;
+    vertical-align: middle;
+    border-collapse:separate;
 }
-
+.child{
+    text-align:right;
+    display:table-row;
+}
+/*SOCIAL MEDIA FOOTER*/
 #footer {
-    background-size: 50px;
-    background-clip: 10px;
-    background-position: center;
-    background-repeat: repeat-x;
-    background-image: url(../images/wavy-03.png);
     background-color: transparent;
     z-index: 9000;
-  position: fixed;
-  width: 100%;
-  /*height: 30px;*/
-  right: 0;
-  bottom: -25px;
-  margin: 0 auto;
-  text-align: right;
+    position: fixed;
+    width: 130%;
+    right: 3rem;
+    bottom: 0;
+    margin: 5px -30px 25px 0;
+    text-align: right;
 }
-#footer, #footer > span {
-    /*margin-t  op: 12px;*/
-    /*margin: 0px;*/
-    padding:  40px 15px 15px 25px;
-    /*height: 100%;*/
-    width: 100%;
+#footer > span {
+    margin-right: 1rem;
+    padding:  3px 8px 8px 20px;
+}
+#footer > span:last-child {
+    margin-right: 5rem;
+}
+@media (min-width: 790px) {
+    #footer > span {
+        margin-right: 8rem;
+        padding:  12px 17px 17px 29px;
+    }
 }
 #email  {
-   /*position: relative;*/
-   /*right: 100px;
-   /*position:*/
-/*z-index: 9999;*/
- height:30px;
- /*background-color: black;*/
- width: 30px;
- background-position: top;
- background-size: 50%;
- background-repeat: no-repeat;
- background-image: url(../images/social-icons/icon-01.png);
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #daf0e6;
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/social-icons/icon-01.png);
+    transition: all .5s;
 }
-   #linkedin  {
-    height:30px;
-    width: 30px;
-    background-position: top;
+#email:hover {
+    background-color:#daf0e6;
+    border-radius: 100%;
+    background-size: 65%;
+}
+#linkedin  {
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #daf0e6;
+    background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/social-icons/icon-02.png);
-  }
-  #github {
-    height: 40px;
-    width: 40px;
-    background-position: top;
+    src: url(https://www.linkedin.com/in/domuttel);
+    transition: all .5s;
+}
+#linkedin:hover {
+    background-color:#daf0e6;
+    border-radius: 100%;
+    background-size: 65%;
+}
+#github {
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #daf0e6;
+    background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/social-icons/icon-03.png);
-  }
-  #twitter {
-    height: 40px;
-    width: 40px;
-    background-position: top;
+    transition: all .5s;
+}
+#github:hover {
+    background-color:#daf0e6;
+    border-radius: 100%;
+    background-size: 65%;
+}
+#twitter {
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #daf0e6;
+    background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/social-icons/icon-04.png);
-  }
-  #cargo {
-    height: 30px;
-    width: 40px;
-    background-position: top;
+    transition: all .5s;
+}
+#twitter:hover {
+    background-color:#daf0e6;
+    border-radius: 100%;
+    background-size: 65%;
+}
+#cargo {
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid #daf0e6;
+    background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
     background-image: url(../images/social-icons/icon-05.png);
-  }
-  #back:hover {
-    background-color:#daf0e6;
-  }
-
-  #email:hover {
-    background-color:#daf0e6;
-  }
-  #linkedin:hover {
-    background-color:#daf0e6;
-  }
-  #github:hover {
-    background-color:#daf0e6;
-  }
-  #twitter:hover {
-    background-color:#daf0e6;
-  }
-  #cargo:hover {
-    background-color:#daf0e6;
-  }
-/*END Social Icons*/
-
-
-/*About Me Information*/
-
-#about-me-info {
-  display: none;
-  background-size: 100vh;
-  margin-top: 10rem;
-
+    transition: all .5s;
 }
-
-
+#cargo:hover {
+    background-color:#daf0e6;
+    border-radius: 100%;
+    background-size: 65%;
+}
+/*END Social Icons*/
+/*About Me Information*/
+#about-me-info {
+    display: none;
+    background-size: 100vh;
+    margin-top: 10rem ;
+    text-align: center;
+}
 .about-info{
-  background-color: transparent;
+    background-color: transparent;
 }
 @media (min-width: 550px) {
-  .about-info{
-    background-color: transparent;
-  }
+    .about-info{
+        background-color: transparent;
+    }
 }
 div.galleria-image-nav-left{
-  display: none;
+    display: none;
 }
-
 #projects span {
-    /*top:-10rem;*/
-  background-color: rgba(255, 255, 255, 0.75);
-  padding: 6px;
-  transition: all 0.5s;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 6px;
+    transition: all 0.5s;
 }
 #projects span:hover,
 #projects span:focus,
@@ -261,12 +244,11 @@ div.galleria-image-nav-left{
        -moz-animation: noiseAnim 0.5s infinite linear alternate;
          -o-animation: noiseAnim 0.5s infinite linear alternate;
             animation: noiseAnim 0.5s infinite linear alternate;
-  /*padding: 10px;*/
+
 }
 .project-title{
     border: 8px white solid;
     padding: 1rem;
-    /*color: white;*/
     text-decoration: none;
     font-size: 1.75rem;
     background-color: #daf0e6;
@@ -275,7 +257,6 @@ div.galleria-image-nav-left{
     margin-top: 1rem;
     border: 8px white solid;
     padding: 1rem;
-    /*margin: 2rem;*/
     background-color: white;
 }
 #top-offset {
@@ -296,13 +277,32 @@ div.galleria-image-nav-left{
         line-height: 5.5rem;
     }
 }
-#center-about { text-align: center; }
-#justify-about { text-align: center; margin-top: 6rem;}
-
+#center-about {
+    text-align: center;
+}
+#justify-about {
+    text-align: center;
+    margin-top: 6rem;
+}
 #social-gap{
-  margin-top: 40px;
+    margin-top: 40px;
 }
 #project-info{
-  display: inline-block;
-  color: black;
+    display: inline-block;
+    color: black;
+    margin-bottom: 8rem;
+}
+/*TECH / SKILLS*/
+
+#tech{
+    margin-top: 8rem;
+    font-size: 1.5rem;
+}
+#skills{
+    margin: 8rem 0;
+    font-size: 1.5rem;
+}
+#my-form{
+    padding-bottom: 4rem;
+
 }

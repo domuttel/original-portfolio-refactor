@@ -1,13 +1,8 @@
 $(document).on('ready', function() {
-
-
 // Create variable to be able to pull index from function
     var index;
-
 // event handler function for project list on click of specialty
 $( document ).on("click", ".specialty", function(e) {
-        // e.stopPropagation();
-        // e.preventDefault();
         // `this` is the DOM element that is clicked
         index = $( ".specialty" ).index( this );
         var partA = '<div class="button image-gallery child">';
@@ -25,8 +20,7 @@ $( document ).on("click", ".specialty", function(e) {
                 partA + '<span class="button">SUPERNOVA</span>' + partB +
                 partA + '<span class="button">Pirate: Contemporary Art</span>' + partB +
                 partA + '<span class="button">Wordcloud Town</span>' + partB
-            ); // <-- all addClasses are attaching to parent node
-
+            );
         }
         else if (index === 2){
             $("#hidden-on-about").fadeIn(800);
@@ -48,11 +42,9 @@ $( document ).on("click", ".specialty", function(e) {
                 partA + '<span class="button">Television Vernacular</span>' + partB +
                 partA + '<span class="button">Meetings In Hollywood</span>' + partB +
                 partA + '<span class="button">Hands</span>' + partB
-             );
+            );
         }
     });
-//------------------------------
-
 // event handler function for gallery to show when project is selected
     $( document ).on("click", ".image-gallery", function(e) {
         // e.preventDefault();
@@ -75,29 +67,46 @@ $( document ).on("click", ".specialty", function(e) {
             else if (indexOfArtGal === 2) { loadGalleria(webProjects.slice(6, 7)); }
         }
     });
-    //----------------------------------------------
 // Load Galleria Theme
     Galleria.loadTheme('js/galleria/galleria.classic.js');
-
 // load galleria -- passes dataSource
     function loadGalleria(dataSource1) {
         $('#galleria').galleria({
-        lightbox: true,
-        idleMode: true,
-        imageCrop: false,
-        dataSource: dataSource1,
-        transition: 'fadeslide',
-        responsive: true,
-        fullscreenDoubleTap: true,
-        fullscreenCrop: true,
-        queue: true,
-        swipe: 'enforce',
-        imagePosition: 'center',
-        thumbnails: 'numbers',
-        showCounter: false,
+            lightbox: true,
+            idleMode: true,
+            imageCrop: false,
+            dataSource: dataSource1,
+            transition: 'fadeslide',
+            responsive: true,
+            fullscreenDoubleTap: true,
+            fullscreenCrop: true,
+            queue: true,
+            swipe: 'enforce',
+            imagePosition: 'center',
+            thumbnails: 'numbers',
+            showCounter: false,
+        });
+    };
+// FORM
+    var $contactForm = $('#my-form');
+    $contactForm.submit(function(e) {
+    	e.preventDefault();
+    	$.ajax({
+    		url: '//formspree.io/domuttel@gmail.com',
+    		method: 'POST',
+    		data: $(this).serialize(),
+    		dataType: 'json',
+    		beforeSend: function() {
+    			$contactForm.append('<div class="alert alert--loading">Sending message…</div>');
+    		},
+    		success: function(data) {
+    			$contactForm.find('.alert--loading').hide();
+    			$contactForm.append('<div class="alert alert--success">Message sent!</div>');
+    		},
+    		error: function(err) {
+    			$contactForm.find('.alert--loading').hide();
+    			$contactForm.append('<div class="alert alert--error">Oops, there was an error.</div>');
+    		}
+    	});
     });
-}
-
-
-
 });

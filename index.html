@@ -8,17 +8,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/skeleton.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/galleria.classic.css">
         <link rel="stylesheet" type="text/css" href="css/main-clean.css">
         <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
     </head>
-
     <body>
-<!-- START Container top -->
-
-    <!-- Navigation -->
+<!-- Navigation -->
     <div class="row" id="top-offset">
         <div class="twelve columns" id="specialties" >
             <div id="my-nav" class="u-pull-right">
@@ -28,89 +24,111 @@
                 <span class="button button-primary specialty">ART</span>
             </div>
         </div>
-
-    <!-- END Navigation -->
-
-</div>
+    </div>
+<!-- END Navigation -->
+<!-- Galleria -->
     <div id="hidden-on-about" class="container">
-
-    <!-- Projects/Galleria -->
-            <div class="row">
-                <div class="ten column">
-                    <div class="u-pull-left" id="galleria"></div>
-                </div>
-                <div class="parent" id="projects"></div>
+        <div class="row">
+            <div class="ten column">
+                <div class="u-pull-left" id="galleria"></div>
             </div>
-            <div class="row">
+            <div class="parent" id="projects"></div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <div id="project-info"></div>
+            </div>
+        </div>
+    </div>
+<!-- END Galleria -->
+<!-- ABOUT -->
+    <div id="about-me-info" class="container">
+        <div  class="row">
+            <div id="justify-about" class="twelve columns">
+                <span id="my-blurb">is a full-stack web developer and visual designer based in Denver, CO with experience in visual art, branding, and graphic design. His intrests rest in finding creative solutions that activate the user experience through beautiful interfaces.</span>
+            </div>
+            <div  id="social" class="twelve columns"></div>
+            <div class="twelve columns about-info">
+                <div id="tech">
+                    <span class="tech-rating">Adobe Creative Suite</span>,
+                    <span class="tech-rating">HTML</span>,
+                    <span class="tech-rating">CSS</span>,
+                    <span class="tech-rating">JavaScript</span>,
+                    <span class="tech-rating">jQuery</span>,
+                    <span class="tech-rating">Angular</span>,
+                    <span class="tech-rating">Handlebars</span>,
+                    <span class="tech-rating">Node</span>,
+                    <span class="tech-rating">Express</span>,
+                    <span class="tech-rating">MongoDB</span>,
+                    <span class="tech-rating">SQL</span>,
+                    <span class="tech-rating">GitHub</span>
+                </div>
+                <div id="skills">
+                    <span class="skill-rating">Wireframing</span>,
+                    <span class="skill-rating">Prototyping</span>,
+                    <span class="skill-rating">UX/UI</span>,
+                    <span class="skill-rating">Branding</span>,
+                    <span class="skill-rating">Identity</span>, +
+                    <span class="skill-rating">Creative Solutions</span>
+                </div>
+
+
+
                 <div class="twelve columns">
-                    <div id="project-info"></div>
-                </div>
-            </div>
-    <!-- END Projects/Galleria -->
-        </div>
-<!-- END Main Container -->
-
-<!-- About Container -->
-        <div id="about-me-info" class="container">
-            <div  class="row">
-                <div id="justify-about" class="twelve columns">
-<span id="my-blurb">
-                    is a full-stack web developer and visual designer based in Denver, CO with experience in visual art, branding, and graphic design. His intrests rest in finding creative solutions that activate the user experience through beautiful interfaces.
-</span>
-                </div>
-
-                <div  id="center-about" class="twelve columns social">
-                            <span class="linkedin social-image"></span>
-                            <span class="github social-image"></span></span>
-                            <span class="twitter social-image"></span>
-                            <span class="cargo social-image"></span>
-                    </div>
-                    <div  id="center-about" class="twelve columns about-info">
-                        <div class="tech">
-                            <span>Adobe Creative Suite</span>,
-                            <span>HTML</span>,
-                            <span>CSS</span>,
-                            <span>JavaScript</span>,
-                            <span>jQuery</span>,
-                            <span>Angular</span>,
-                            <span>Handlebars</span>,
-                            <span>Node</span>,
-                            <span>Express</span>,
-                            <span>MongoDB</span>,
-                            <span>SQL</span>,
-                            <span>GitHub</span>
+                    <form id="my-form" action="//formspree.io/domuttel@gmail.com" method="post">
+                        <div class="row">
+                            <div class="six columns">
+                                <label for="email">Your email</label>
+                                <input class="u-full-width" type="email" name="_replyto" placeholder="cat@catstuff.com" id="t-email" required>
+                            </div>
+                            <div class="six columns">
+                                <label for="interest">Reason for contacting</label>
+                                <select name="Interest" class="u-full-width" id="t-interest">
+                                    <option value="Option 1">DEV</option>
+                                    <option value="Option 2">DESIGN</option>
+                                    <option value="Option 3">ART</option>
+                                </select>
+                            </div>
                         </div>
+                        <label for="message">Message</label>
+                            <textarea name="Message" class="u-full-width" placeholder="Hello! " id="t-message" required></textarea>
 
-                        <div class="skills">
-                            <span>Wireframing</span>,
-                            <span>Prototyping</span>,
-                            <span>UX/UI</span>,
-                            <span>Branding</span>,
-                            <span>Identity</span>, +
-                            <span>Creative Solutions</span>
-                        </div>
-                        <h5><a href="mailTo:domuttel@gmail.com"> domuttel@gmail.com</a> / <a href="tel:9704206721">+1.970-420-6721</a> </h5>
+                    <!-- CONFIG -->
+                        <input style="display: none;" type="text" name="_gotcha">
+                        <input type="hidden" name="_subject" value="Subject">
+                        <input type="hidden" name="_cc" value="">
+                    <!-- /CONFIG -->
+
+                    <input class="button-primary submit" type="submit" value="SEND">
+
+
+                    </form>
+
+    <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
+    <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
+
                 </div>
             </div>
         </div>
+    </div>
 <!-- END About Container -->
-
 <!-- My Logo -->
-<div class="logo">
-    <div id="my-logo"></div>
-</div>
-<div class="name">
-    <div id="my-name"></div>
-</div>
-<!-- ENDMy Logo -->
-<div id="footer">
-    <span id="email"></span>
-    <span id="linkedin"></span>
-    <span id="github"></span>
-    <span id="twitter"></span>
-    <span id="cargo"></span>
-</div>
-
+    <div class="logo">
+        <div id="my-logo"></div>
+    </div>
+    <div class="name">
+        <div id="my-name"></div>
+    </div>
+<!-- END Logo -->
+<!-- FOOTER -->
+    <div id="footer">
+        <span id="email"></span>
+        <span id="linkedin"></span>
+        <span id="github"></span>
+        <span id="twitter"></span>
+        <span id="cargo"></span>
+    </div>
+<!-- END FOOTER -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script type="text/javascript" src="js/galleria/galleria-1.4.2.js" ></script>
     <script type="text/javascript" src="js/gallery.js"></script>
