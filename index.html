@@ -17,20 +17,22 @@
 
     <body>
 <!-- START Container top -->
-        <div id="hidden-on-about" class="container">
 
     <!-- Navigation -->
-            <div class="row" id="top-offset">
-                <div class="twelve columns" id="specialties" >
-                <div class="u-pull-right">
-                    <span id="about-me" class="button button-primary">ABOUT</span>
-                    <span class="button button-primary specialty">DEV</span>
-                    <span class="button button-primary specialty">DESIGN</span>
-                    <span class="button button-primary specialty">ART</span>
-                </div>
-                </div>
+    <div class="row" id="top-offset">
+        <div class="twelve columns" id="specialties" >
+            <div id="my-nav" class="u-pull-right">
+                <span id="about-me" class="button button-primary specialty">ABOUT</span>
+                <span class="button button-primary specialty">DEV</span>
+                <span class="button button-primary specialty">DESIGN</span>
+                <span class="button button-primary specialty">ART</span>
             </div>
+        </div>
+
     <!-- END Navigation -->
+
+</div>
+    <div id="hidden-on-about" class="container">
 
     <!-- Projects/Galleria -->
             <div class="row">
@@ -50,29 +52,43 @@
 
 <!-- About Container -->
         <div id="about-me-info" class="container">
-            <div class="row">
-                <div class="twelve columns">
-                    <div class="u-pull-right">
-                        <span class="button button-primary back-button">BACK</span>
-                    </div>
-                </div>
-            </div>
             <div  class="row">
                 <div id="justify-about" class="twelve columns">
-                    <h2>
+<span id="my-blurb">
                     is a full-stack web developer and visual designer based in Denver, CO with experience in visual art, branding, and graphic design. His intrests rest in finding creative solutions that activate the user experience through beautiful interfaces.
-                    </h2>
+</span>
                 </div>
 
-                <div  id="center-about" class="twelve columns about-info">
+                <div  id="center-about" class="twelve columns social">
+                            <span class="linkedin social-image"></span>
+                            <span class="github social-image"></span></span>
+                            <span class="twitter social-image"></span>
+                            <span class="cargo social-image"></span>
+                    </div>
+                    <div  id="center-about" class="twelve columns about-info">
+                        <div class="tech">
+                            <span>Adobe Creative Suite</span>,
+                            <span>HTML</span>,
+                            <span>CSS</span>,
+                            <span>JavaScript</span>,
+                            <span>jQuery</span>,
+                            <span>Angular</span>,
+                            <span>Handlebars</span>,
+                            <span>Node</span>,
+                            <span>Express</span>,
+                            <span>MongoDB</span>,
+                            <span>SQL</span>,
+                            <span>GitHub</span>
+                        </div>
 
-                        <span><a href="https://www.linkedin.com/in/domuttel"><img id="linked" class="icon" src="images/blank-13.png"></a></span>
-                        <span><a href="https://github.com/domuttel"><img id="github" class="icon" src="images/blank-13.png"></a></span>
-                        <span><a href="https://twitter.com/DOMUconcept"><img id="twitter" class="icon" src="images/blank-13.png"></a></span>
-                        <span><a href="http://cargocollective.com/DoFRAN"><img id="cargo" class="icon" src="images/blank-13.png"></a></span>
-                        <h5 id="social-gap">Adobe Creative Suite, HTML, CSS, JavaScript, jQuery, Angular, Handlebars, Node, Express, MongoDB, SQL, GitHub</h5>
-
-                        <h5>Wireframing, Prototyping, UX/UI, Branding, Identity, + Creative Solutions</h5>
+                        <div class="skills">
+                            <span>Wireframing</span>,
+                            <span>Prototyping</span>,
+                            <span>UX/UI</span>,
+                            <span>Branding</span>,
+                            <span>Identity</span>, +
+                            <span>Creative Solutions</span>
+                        </div>
                         <h5><a href="mailTo:domuttel@gmail.com"> domuttel@gmail.com</a> / <a href="tel:9704206721">+1.970-420-6721</a> </h5>
                 </div>
             </div>
@@ -80,13 +96,20 @@
 <!-- END About Container -->
 
 <!-- My Logo -->
-<div id="my-logo">
-    <img src="images/newLogowhiteLARGE-03.png">
+<div class="logo">
+    <div id="my-logo"></div>
 </div>
-<div id="my-name">
-    <img src="images/my-name-02.png">
+<div class="name">
+    <div id="my-name"></div>
 </div>
 <!-- ENDMy Logo -->
+<div id="footer">
+    <span id="email"></span>
+    <span id="linkedin"></span>
+    <span id="github"></span>
+    <span id="twitter"></span>
+    <span id="cargo"></span>
+</div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script type="text/javascript" src="js/galleria/galleria-1.4.2.js" ></script>

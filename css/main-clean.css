@@ -1,6 +1,7 @@
 /*HTML elements*/
 /*Box-sizing w inheritence*/
 html {
+    overflow-y: scroll;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -11,43 +12,98 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
+body::-webkit-scrollbar {
+    width: 0;
+}
+
 
 body {
   z-index: -1000;
   cursor: crosshair;
   background-size: 100%;
   height: 100vh;
-  background: linear-gradient(to right bottom,  #daf0e6  20%, #fff8fa 70%);
+  margin-bottom: 0rem;
+  background: linear-gradient(to right bottom,  #daf0e6  50%, transparent 50%);
 }
 
+#my-nav{
+    z-index: 9999;
+    position: fixed;
+    right: 1.2rem;
+    margin-top: 5.8rem;
+    margin-right:4rem;
+    transition: all .5s;
+}
+@media (min-width: 790px) {
+    #my-nav{
+        margin-top: 1.7rem;
+        margin-right:4rem;
+    }
+}
+/*#my-blurb{
+    font-size: 1rem;
+}*/
+/*@media (min-width: 790px) {
+    .logo{
+        top:4%;
+    }
+}*/
+.logo{
+    width: 30%;
+    /*min-width: */
+    position: fixed;
+    height:400px;
+    /*min-height: 90px;*/
+
+    top: 11rem;
+    left: 20%;
+    z-index: -5000;
+}
 #my-logo {
-  position: fixed;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 1000px;
-  height: 400px;
-  z-index: -100;
+    /*vertical-align: top;*/
+background-image: url('../images/domu_logo-01.png');
+background-repeat: no-repeat;
+  /*margin: auto;*/
+background-size: 80%;
+background-position: top;
+min-width: 150px;
+/*min-width: 60px;*/
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  /*min-width: 80%;*/
 }
-
+.name{
+    max-width: 45rem;
+    width: 40%;
+    min-width: 34rem;
+    /*min-width: 15rem;*/
+    position: fixed;
+    height:40px;
+    top: 2rem;
+    left: 2.7rem;
+    /*z-index: -5000;*/
+}
 #my-name {
-  position:fixed;
-  top:0;
-  left:6%;
-  z-index: -100;
+    background-image: url('../images/name-02-02.png');
+      /*margin: auto;*/
+      background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+      width: 100%;
+      height: 100%;
 }
 
 /*Galleria height*/
 #galleria {
+    margin-top: 5rem;
   min-height: 500px;
   width: 100%;
 }
 
 .galleria-thumbnails { margin: 0 auto; }
 .galleria-thumbnails .galleria-image {
-  margin-top: 8px;
+  /*margin-top: 150px !important;*/
   width: 10px !important;
   height: 10px !important;
   background: white !important;
@@ -70,75 +126,111 @@ body {
 }
 .parent{height:250px;display:table;border-spacing:5px;vertical-align: middle;border-collapse:separate;}
 .child{text-align:right;display:table-row;}
-
-
-#social-icons {
-  position: fixed;
-  bottom: -10px;
-  left:20%;
+#linkedin{
+    background-image: url();
+    src: url(https://www.linkedin.com/in/domuttel);
 }
-  #back {
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/social-icons/icons-07.png);
-  }
-  #email {
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/social-icons/icons-01.png);
-  }
-  #linked {
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/social-icons/hover-icons-09.png);
+
+#footer {
+    background-size: 50px;
+    background-clip: 10px;
+    background-position: center;
+    background-repeat: repeat-x;
+    background-image: url(../images/wavy-03.png);
+    background-color: transparent;
+    z-index: 9000;
+  position: fixed;
+  width: 100%;
+  /*height: 30px;*/
+  right: 0;
+  bottom: -25px;
+  margin: 0 auto;
+  text-align: right;
+}
+#footer, #footer > span {
+    /*margin-t  op: 12px;*/
+    /*margin: 0px;*/
+    padding:  40px 15px 15px 25px;
+    /*height: 100%;*/
+    width: 100%;
+}
+#email  {
+   /*position: relative;*/
+   /*right: 100px;
+   /*position:*/
+/*z-index: 9999;*/
+ height:30px;
+ /*background-color: black;*/
+ width: 30px;
+ background-position: top;
+ background-size: 50%;
+ background-repeat: no-repeat;
+ background-image: url(../images/social-icons/icon-01.png);
+}
+   #linkedin  {
+    height:30px;
+    width: 30px;
+    background-position: top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/social-icons/icon-02.png);
   }
   #github {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/hover-icons-10.png);
+    background-position: top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/social-icons/icon-03.png);
   }
   #twitter {
     height: 40px;
     width: 40px;
-    background-image: url(../images/social-icons/hover-icons-11.png);
+    background-position: top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/social-icons/icon-04.png);
   }
   #cargo {
-    height: 40px;
+    height: 30px;
     width: 40px;
-    background-image: url(../images/social-icons/hover-icons-12.png);
+    background-position: top;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-image: url(../images/social-icons/icon-05.png);
   }
   #back:hover {
-    background-image: url(../images/social-icons/hover-icons-14.png);
+    background-color:#daf0e6;
   }
 
   #email:hover {
-    background-image: url(../images/social-icons/icons-08.png);
+    background-color:#daf0e6;
   }
-  #linked:hover {
-    background-image: url(../images/social-icons/icons-02.png);
+  #linkedin:hover {
+    background-color:#daf0e6;
   }
   #github:hover {
-    background-image: url(../images/social-icons/icons-03.png);
+    background-color:#daf0e6;
   }
   #twitter:hover {
-    background-image: url(../images/social-icons/icons-04.png);
+    background-color:#daf0e6;
   }
   #cargo:hover {
-    background-image: url(../images/social-icons/icons-05.png);
+    background-color:#daf0e6;
   }
 /*END Social Icons*/
 
 
 /*About Me Information*/
+
 #about-me-info {
   display: none;
   background-size: 100vh;
+  margin-top: 10rem;
+
 }
-#about-me-info, #about-me-info:first-child{
-  margin-top: 0;
-}
-#about-me-info, h5 {
-}
+
+
 .about-info{
   background-color: transparent;
 }
@@ -152,25 +244,61 @@ div.galleria-image-nav-left{
 }
 
 #projects span {
-  background-color: white;
-  padding: 10px;
+    /*top:-10rem;*/
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 6px;
+  transition: all 0.5s;
 }
-#projects span:hover {
-  background-color: black;
-  padding: 10px;
+#projects span:hover,
+#projects span:focus,
+#projects span:active {
+    color: white;
+    background-image: url(http://prashantsani.com/Misc/codepen/noise.jpg);
+    background-repeat: repeat;
+    background-position: 0 0;
+    padding-left: 60px;
+    -webkit-animation: noiseAnim 0.5s infinite linear alternate;
+       -moz-animation: noiseAnim 0.5s infinite linear alternate;
+         -o-animation: noiseAnim 0.5s infinite linear alternate;
+            animation: noiseAnim 0.5s infinite linear alternate;
+  /*padding: 10px;*/
 }
-
+.project-title{
+    border: 8px white solid;
+    padding: 1rem;
+    /*color: white;*/
+    text-decoration: none;
+    font-size: 1.75rem;
+    background-color: #daf0e6;
+}
+.about-project{
+    margin-top: 1rem;
+    border: 8px white solid;
+    padding: 1rem;
+    /*margin: 2rem;*/
+    background-color: white;
+}
 #top-offset {
   margin-bottom: 50px;
 }
-
+#justify-about > span {
+    font-size: 1.8rem;
+    padding: .5rem;
+    background-color: rgba(255, 255, 255, 0.75);;
+    line-height: 4rem;
+    transition: all 1s;
+}
+@media (min-width: 790px) {
+    #justify-about > span {
+        font-size: 2.2rem;
+        padding: .7rem;
+        background-color: rgba(255, 255, 255, 0.75);;
+        line-height: 5.5rem;
+    }
+}
 #center-about { text-align: center; }
-#justify-about { text-align: center; }
+#justify-about { text-align: center; margin-top: 6rem;}
 
-@media (min-width: 550px) {
-  #justify-about { text-align: left; }
-
-  }
 #social-gap{
   margin-top: 40px;
 }
