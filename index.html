@@ -5,7 +5,8 @@
         <title>Dominic Muttel</title>
         <meta name="description" content="Professional works created and developed by Dominic Muttel">
         <meta name="author" content="Dominic Muttel">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="HandheldFriendly" content="true">
         <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
         <link rel="stylesheet" type="text/css" href="css/skeleton.css">
         <link rel="stylesheet" type="text/css" href="css/galleria.classic.css">
@@ -17,7 +18,7 @@
 <!-- Navigation -->
     <div class="row" id="top-offset">
         <div class="twelve columns" id="specialties" >
-            <div id="my-nav" class="u-pull-right">
+            <div id="my-nav">
                 <span id="about-me" class="button button-primary specialty">ABOUT</span>
                 <span class="button button-primary specialty">DEV</span>
                 <span class="button button-primary specialty">DESIGN</span>
@@ -84,14 +85,15 @@
                             <div class="six columns">
                                 <label for="interest">Reason for contacting</label>
                                 <select name="Interest" class="u-full-width" id="t-interest">
-                                    <option value="Option 1">DEV</option>
-                                    <option value="Option 2">DESIGN</option>
-                                    <option value="Option 3">ART</option>
+                                    <option value="Web Development">DEV</option>
+                                    <option value="Design">DESIGN</option>
+                                    <option value="Art">ART</option>
+                                    <option value="Random">RANDOM</option>
                                 </select>
                             </div>
                         </div>
                         <label for="message">Message</label>
-                            <textarea name="Message" class="u-full-width" placeholder="Hello! " id="t-message" required></textarea>
+                        <textarea name="Message" class="u-full-width" placeholder="Hello! " id="t-message" required></textarea>
 
                     <!-- CONFIG -->
                         <input style="display: none;" type="text" name="_gotcha">
@@ -99,7 +101,7 @@
                         <input type="hidden" name="_cc" value="">
                     <!-- /CONFIG -->
 
-                    <input class="button-primary submit" type="submit" value="SEND">
+                        <input class="button-primary submit" type="submit" value="SEND">
 
 
                     </form>
