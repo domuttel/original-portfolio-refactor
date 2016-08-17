@@ -15,16 +15,22 @@
         <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
     </head>
     <body>
+<!-- My Logo -->
+<div id="outside-name">
+    <div id="name">
+        <div id="my-name"></div>
+    </div>
+</div>
+    <div class="logo">
+        <div id="my-logo"></div>
+    </div>
+<!-- END Logo -->
 <!-- Navigation -->
-    <div class="row" id="top-offset">
-        <div class="twelve columns" id="specialties" >
-            <div id="my-nav">
-                <span id="about-me" class="button button-primary specialty">ABOUT</span>
-                <span class="button button-primary specialty">DEV</span>
-                <span class="button button-primary specialty">DESIGN</span>
-                <span class="button button-primary specialty">ART</span>
-            </div>
-        </div>
+    <div id="site-nav">
+        <span class="button button-primary specialty">ABOUT</span>
+        <span class="button button-primary specialty">DEV</span>
+        <span class="button button-primary specialty">DESIGN</span>
+        <span class="button button-primary specialty">ART</span>
     </div>
 <!-- END Navigation -->
 <!-- Galleria -->
@@ -72,9 +78,6 @@
                     <span class="skill-rating">Identity</span>, +
                     <span class="skill-rating">Creative Solutions</span>
                 </div>
-
-
-
                 <div class="twelve columns">
                     <form id="my-form" action="//formspree.io/domuttel@gmail.com" method="post">
                         <div class="row">
@@ -94,41 +97,27 @@
                         </div>
                         <label for="message">Message</label>
                         <textarea name="Message" class="u-full-width" placeholder="Hello! " id="t-message" required></textarea>
-
                     <!-- CONFIG -->
                         <input style="display: none;" type="text" name="_gotcha">
                         <input type="hidden" name="_subject" value="Subject">
                         <input type="hidden" name="_cc" value="">
                     <!-- /CONFIG -->
-
                         <input class="button-primary submit" type="submit" value="SEND">
-
-
                     </form>
-
     <!-- Always wrap checkbox and radio inputs in a label and use a <span class="label-body"> inside of it -->
     <!-- Note: The class .u-full-width is just a utility class shorthand for width: 100% -->
-
                 </div>
             </div>
         </div>
     </div>
 <!-- END About Container -->
-<!-- My Logo -->
-    <div class="logo">
-        <div id="my-logo"></div>
-    </div>
-    <div class="name">
-        <div id="my-name"></div>
-    </div>
-<!-- END Logo -->
 <!-- FOOTER -->
     <div id="footer">
-        <span id="email"></span>
-        <span id="linkedin"></span>
-        <span id="github"></span>
-        <span id="twitter"></span>
-        <span id="cargo"></span>
+        <a id="email" href="mailto:domuttel@gmail.com"></a>
+        <a id="linkedin" href="https://www.linkedin.com/in/domuttel"></a>
+        <a id="github" href="https://github.com/domuttel"></a>
+        <a id="twitter" href="https://twitter.com/DOMUconcept"></a>
+        <a id="cargo" href="http://cargocollective.com/dofran"></a>
     </div>
 <!-- END FOOTER -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>

@@ -1,9 +1,9 @@
 $(document).on('ready', function() {
-    $('#email').attr('href','mailto:domuttel@gmail.com');
-    $('#linkedin').attr('href','https://www.linkedin.com/in/domuttel');
-    $('#github').attr('href','https://github.com/domuttel');
-    $('#twitter').attr('href','https://twitter.com/DOMUconcept');
-    $('#cargo').attr('href','http://cargocollective.com/dofran');
+    // $('#email').append('<a href="mailto:domuttel@gmail.com"></a>');
+    // $('#linkedin').append('<a href="https://www.linkedin.com/in/domuttel"></a>');
+    // $('#github').append('<a href="https://github.com/domuttel"></a>');
+    // $('#twitter').append('<a href="https://twitter.com/DOMUconcept"></a>');
+    // $('#cargo').append('<a href="http://cargocollective.com/dofran"></a>');
 // Create variable to be able to pull index from function
     var index;
 // event handler function for project list on click of specialty
