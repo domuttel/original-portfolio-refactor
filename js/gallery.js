@@ -4,17 +4,17 @@
         {
             image: 'images/galleries/webThumbs/supernova-screen-1.png',
             title: '<span class="project-title">SUPERNOVA</span> <a href="http://www.supernovadenver.org">visit site</a>',
-            description: "<div class='about-project'>Denver Digerati founder Ivar Zeil contacted me to create a website for Denver's first outdoor digital animation and art, SUPERNOVA.<br><b>Team:</b> <em>Ivar Zeil, Ryan Pattie + Dominic Muttel</em></div>",
+            description: "<div class='about-project'>Denver Digerati founder Ivar Zeil contacted me to create a website for Denver's first outdoor digital animation and art festival, SUPERNOVA.<br><b>Team:</b> <em>Ivar Zeil, Ryan Pattie + Dominic Muttel</em></div>",
         },
         {
             image: 'images/galleries/webThumbs/supernova-screen-2.png',
             title: '<span class="project-title">SUPERNOVA</span> <a href="http://www.supernovadenver.org">visit site</a>',
-            description: "<div class='about-project'>As the festival is approaching quickly we chose to focus on the design, content, and responsiveness followed by a user database with custom features. The user database will allow for users to post comments, post images, access social media content, allow for admin to update content, and more. <br><b>Team:</b> <em>Ivar Zeil, Ryan Pattie + Dominic Muttel</em></div>"
+            description: "<div class='about-project'>As the festival is approaching quickly we chose to focus on the design, content, and responsiveness followed by a user database with custom features.  <br><b>Team:</b> <em>Ivar Zeil, Ryan Pattie + Dominic Muttel</em></div>"
         },
         {
             image: 'images/galleries/webThumbs/mobile-1.png',
             title: '<span class="project-title">SUPERNOVA</span> <a href="http://www.supernovadenver.org">visit site</a>',
-            description: '<div class="about-project">I am excited to be a part of Supernovas ground breaking programming.<br><b>Team:</b> <em>Lance Powers, Brandon Thornton, Pete Jefferies + Dominic Muttel</em></div>'
+            description: "<div class='about-project'>The user database will allow for users to post comments, post images, access social media content, allow for admin to update content, and more.<br><b>Team:</b> <em>Ivar Zeil, Ryan Pattie + Dominic Muttel</em></div>"
         },
         {
             image: 'images/galleries/webThumbs/pirate-desktop-1.png',
