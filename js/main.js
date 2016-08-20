@@ -1,5 +1,4 @@
 $(document).on('ready', function() {
-    $('#scene').parallax();
 
 // Create variable to be able to pull index from function
     var index;

@@ -33,107 +33,6 @@ a{
     margin: auto;
     padding: 0;
 }
-#bg-container{
-    position: fixed;
-    z-index: -9999;
-    width: 100%;
-    height: 100%;
-}
-/*#bg-image{
-    float: right;
-    width: 100%;
-    height: 100%;
-    min-width: 1600px;
-    min-width: 1800px;
-    background-image: url(../images/plant-background.png);
-    background-size: 100%;
-    background-position: bottom;
-    background-repeat: no-repeat;
-}*/
-#scene{
-    z-index: -7500;
-position: fixed;
-/*width: 100%;
-height: 100%;*/
-bottom: 0;
-right: 0;
-
-}
-#scene > img {
-    width: 50%;
-    height: auto;
-}
-/*#scene > li{
-    width: 100%;
-    height: 100%;
-
-}*/
-/*#dots{
-    background-image: url(../images/dot-03.png);
-    background-repeat: repeat;
-    background-size: 110%;
-    width: 100%;
-    height: 100%;
-}*/
-/*.back-container {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    z-index: -9999;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-.scene {
-    padding: 0;
-    margin: 0;
-}
-.fill {
-    position: absolute;
-    bottom: 5%;
-    right: 5%;
-    left: 5%;
-    top: 5%;
-}
-
-.expand-width {
-    width: 100%;
-}
-
-.border {
-    border: 2px dashed #00FFAA;
-}
-
-.aspect {
-    opacity: 0.2;
-}
-.layer:nth-child(1) {
-    opacity: 0.15;
-}
-.layer:nth-child(2) {
-    opacity: 0.30;
-}
-.layer:nth-child(3) {
-    opacity: 0.45;
-}
-.layer:nth-child(4) {
-    opacity: 0.60;
-}
-.layer:nth-child(5) {
-    opacity: 0.75;
-}
-.layer:nth-child(6) {
-    opacity: 0.90;
-    margin: 0;
-    padding: 0;
-    width: 120%;
-    height: 120%;
-}*/
-
 /* NAV */
 #site-nav{
     z-index: 9999;
@@ -202,13 +101,11 @@ right: 0;
 
 }
 #my-name {
-    background-image: url('../images/name-02-02.png');
+    background-image: url('../images/name.png');
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
     width: 100%;
-    /*max-width: 40rem;
-    min-width: 20rem;*/
     height: 50px;
     margin-left: 5px;
 
