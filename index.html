@@ -15,12 +15,25 @@
         <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
     </head>
     <body>
+    <div id="background-triangle"></div>
+
+
+        <div id="bg-container">
+            <div id="bg-image"></div>
+        </div>
+            <ul style="display:none;" id="scene">
+                <li class="layer" data-depth="0.10"><img style="opacity: 0.5;" src="images/plant-background.png"></li>
+                <li class="layer" data-depth="0.15"><img style="opacity: 0.5;" src="images/plant-background.png"></li>
+                <li class="layer" data-depth="0.2"><img style="opacity: 0.5;" src="images/plant-background.png"></li>
+                <li class="layer" data-depth="0.25"><img style="opacity: 0.5;" src="images/plant-background.png"></li>
+            </ul>
+
 <!-- My Logo -->
-<div id="outside-name">
-    <div id="name">
-        <div id="my-name"></div>
+    <div id="outside-name">
+        <div id="name">
+            <div id="my-name"></div>
+        </div>
     </div>
-</div>
     <div class="logo">
         <div id="my-logo"></div>
     </div>
@@ -121,9 +134,10 @@
     </div>
 <!-- END FOOTER -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery.parallax.js"></script> -->
     <script type="text/javascript" src="js/galleria/galleria-1.4.2.js" ></script>
     <script type="text/javascript" src="js/gallery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
