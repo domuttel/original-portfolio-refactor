@@ -62,7 +62,7 @@
     ];
     var noesis = [
         {
-            image: 'images/galleries/noesisLandscape/1.png',
+            image: 'images/galleries/noesisLandscape/1.jpg',
             title: '<span class="project-title"><em>Document #1</em>, 2011</span>',
             description: '<div class="about-project">inkjet print, <br> 36 in. (91.44 cm.)</div>',
         },
@@ -161,11 +161,6 @@
         {
             image: 'images/galleries/remotePatterns/6.png',
             title: '<span class="project-title"><em>1.j</em>, 2011</span>',
-            description: '<div class="about-project">cyanotype, silver gelatin, white-out, water color <br>10 x 11 in. (25.4 x 27.94 cm.)</div>'
-        },
-        {
-            image: 'images/galleries/remotePatterns/7.png',
-            title: '<span class="project-title"><em>1.k</em>, 2011</span>',
             description: '<div class="about-project">cyanotype, silver gelatin, white-out, water color <br>10 x 11 in. (25.4 x 27.94 cm.)</div>'
         },
         {
@@ -383,7 +378,7 @@
             description: '<div class="about-project">One of the more interesting people I have met, this client wanted me to create an identity from a persona he had invented through his writings. The idea is that when these three personalities combined a tiger arises out of the conflict creating a sense of control in the chaos.</div>'
         },
         {
-            image: 'images/galleries/logo/three-people-identity.gif',
+            image: 'images/galleries/logo/3people-identity.gif',
             title: '<span class="project-title">Three People Make a Tiger</span>',
             description: '<div class="about-project">One of the underlying notes was the disjointed writing style that seemed to vary depending on the persona. Because of this, I took an illustrative <em>Ralph Steadman</em> approach to bring the zaniness to the forefront of the design.</div>'
         },
@@ -458,7 +453,7 @@
             description: '<div class="about-project">The activation of Kay Fisker Plads was very successful. People utilized the seating, , and happily gave us feedback on our questionnaire. This information and research was then presented to urban action groups in Copenhagen to further the conversation on ways we could activate other areas that were similar to Kay Fisker Plads.<br> The <b>Team:</b><em> Sarah Maas, Danny Horrigan, Cory Brown + Dominic Muttel</em></div>'
         },
         {
-            image: 'images/galleries/logo/tmmh.gif',
+            image: 'images/galleries/happy/tmmh.gif',
             title: '<span class="project-title">This Makes Me Happy</span> <a href="http://designofhappiness-blog.tumblr.com/">visit blog</a>',
             description: '<div class="about-project">Is a cross-cultural study of what happiness means to us. We focused on the G.D.H. (Gross Domestic Happiness) of specific countries and examined what factors contributed to individual happiness.<br> <b>Team:</b><em> Thomas Alexander Johnston + Dominic Muttel</em></div>'
         },
