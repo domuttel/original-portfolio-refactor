@@ -123,7 +123,7 @@ a{
 .galleria-thumbnails .galleria-image {
     width: 10px !important;
     height: 10px !important;
-    background: white !important;
+    background: #cecece!important;
     border: solid white 1px !important;
     border-radius: 10px !important;
     color: white;

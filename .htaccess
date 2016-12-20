@@ -1,0 +1,17 @@
+# Begin cache control #
+ExpiresActive on
+ExpiresDefault "now plus 1209600 minutes"
+ExpiresByType text/html "now plus 1209600 minutes"
+<FilesMatch "\.(css|png|bmp|ico|htm|gff|html|js|jpg|jpeg|gif|gcf)$">
+FileETag MTime Size
+ExpiresDefault "now plus 1209600 minutes"
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|xml|gz)$">
+    Header append Vary: Accept-Encoding
+  </FilesMatch>
+</IfModule>
+
+
+# End cache control #
